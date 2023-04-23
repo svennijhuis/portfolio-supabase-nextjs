@@ -1,8 +1,7 @@
 "use client";
 
 import ParallaxScrollSection from "./parallax-scroll-section";
-import SingleImage from "@/components/sections/gallery/single-image";
-import { DataImageGallery } from "@/data/image-gallery";
+// import SingleImage from "@/components/sections/gallery/single-image";
 import {
   motion,
   useScroll,
