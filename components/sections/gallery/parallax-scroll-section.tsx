@@ -25,9 +25,10 @@ const ParallaxScrollSection = ({
   });
   const Y = useTransform(scrollY, [0, 1], [-distance, distance]);
   return (
-    <div ref={targetRefScroll} style={{ Y }}>
-      {children}
-    </div>
+    <div></div>
+    // <div ref={targetRefScroll} style={{ Y }}>
+    //   {children}
+    // </div>
   );
 };
 
