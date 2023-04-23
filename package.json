@@ -9,17 +9,32 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "^3.7.2",
+    "@supabase/auth-helpers-nextjs": "^0.6.1",
+    "@supabase/supabase-js": "^2.21.0",
+    "@total-typescript/ts-reset": "^0.4.2",
     "@types/node": "18.15.13",
     "@types/react": "18.0.38",
     "@types/react-dom": "18.0.11",
     "autoprefixer": "10.4.14",
+    "clsx": "^1.2.1",
     "eslint": "8.39.0",
     "eslint-config-next": "13.3.1",
+    "framer-motion": "^10.12.4",
+    "hamburger-react": "^2.5.0",
+    "lucide-react": "^0.171.0",
     "next": "13.3.1",
     "postcss": "8.4.23",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-hook-form": "^7.43.9",
+    "sass": "^1.62.0",
+    "tailwind-merge": "^1.12.0",
     "tailwindcss": "3.3.1",
     "typescript": "5.0.4"
+  },
+    "devDependencies": {
+    "prettier": "^2.8.7",
+    "prettier-plugin-tailwindcss": "^0.2.6"
   }
 }

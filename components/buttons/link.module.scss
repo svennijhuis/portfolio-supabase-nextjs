@@ -1,0 +1,38 @@
+.linkStyling {
+  span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    svg {
+      width: 15px;
+      height: auto;
+      transition: 0.5s ease-in-out;
+    }
+    &:nth-of-type(1) {
+      transform: translateY(0);
+    }
+    &:nth-of-type(2) {
+      transform: translateY(20px);
+    }
+  }
+
+  &:hover {
+    span {
+      svg {
+        transition: 0.5s ease-in-out;
+      }
+
+      &:nth-of-type(1) {
+        transform: translateY(-20px);
+      }
+      &:nth-of-type(2) {
+        transform: translateY(-24px);
+      }
+    }
+  }
+}

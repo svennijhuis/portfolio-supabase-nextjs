@@ -1,0 +1,66 @@
+.mobile_navbar {
+  overflow-y: scroll !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 8;
+  width: 100vw;
+  height: fit-content;
+  overflow: hidden;
+  transition: 0.6s;
+  transform: translateY(-100%);
+
+  &.open {
+    transform: translateY(0);
+  }
+}
+
+.open_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  div {
+    margin-right: 23px !important;
+  }
+}
+
+.link_hover {
+  span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    svg {
+      width: 15px;
+      height: auto;
+      transition: 0.5s ease-in-out;
+    }
+    &:nth-of-type(1) {
+      transform: translateY(0);
+    }
+    &:nth-of-type(2) {
+      transform: translateY(20px);
+    }
+  }
+
+  &:hover {
+    span {
+      svg {
+        transition: 0.5s ease-in-out;
+      }
+
+      &:nth-of-type(1) {
+        transform: translateY(-20px);
+      }
+      &:nth-of-type(2) {
+        transform: translateY(-20px);
+      }
+    }
+  }
+}

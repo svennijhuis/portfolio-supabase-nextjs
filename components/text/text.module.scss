@@ -1,0 +1,23 @@
+.list {
+  animation-name: titleflip;
+  animation: titleflip 4s ease-in-out infinite;
+}
+
+@keyframes titleflip {
+  0%,
+  33% {
+    transform: translate(0px, -22px);
+  }
+  33%,
+  66% {
+    transform: translate(0px, 0px);
+  }
+  66%,
+  100% {
+    transform: translate(0px, 22px);
+  }
+  100%,
+  0% {
+    transform: translate(0px, -22px);
+  }
+}
