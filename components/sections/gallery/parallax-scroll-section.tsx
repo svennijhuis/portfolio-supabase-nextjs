@@ -1,34 +1,38 @@
-import {
-  motion,
-  useScroll,
-  useSpring,
-  useTransform,
-  MotionValue,
-} from "framer-motion";
+"use client";
+
+import clsx from "clsx";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
+import {
+  Parallax,
+  ParallaxBanner,
+  ParallaxProvider,
+  useParallax,
+} from "react-scroll-parallax";
 
 interface ParallaxScrollSectionProps {
   children: React.ReactNode;
-  distance: number;
-  reverse?: boolean;
+  className?: string;
+  speed?: number;
 }
 
 const ParallaxScrollSection = ({
   children,
-  distance,
-  reverse,
+  speed,
+  className,
 }: ParallaxScrollSectionProps) => {
-  const targetRefScroll = useRef(null);
-  const { scrollY } = useScroll({
-    target: targetRefScroll,
-    offset: ["end end", "end start"],
-  });
-  const Y = useTransform(scrollY, [0, 1], [-distance, distance]);
   return (
-    <div></div>
-    // <div ref={targetRefScroll} style={{ Y }}>
-    //   {children}
-    // </div>
+    <ParallaxProvider>
+      <ParallaxBanner
+        layers={[
+          {
+            speed: speed,
+            children: children,
+          },
+        ]}
+        className={clsx("h-full", className)}
+      />
+    </ParallaxProvider>
   );
 };
 

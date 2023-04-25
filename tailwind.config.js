@@ -403,7 +403,7 @@ module.exports = {
           },
           "@screen 2xl": {
             width: "100%",
-            maxWidth: "100%",
+            maxWidth: "1600px",
             paddingLeft: "50px",
             paddingRight: "50px",
           },

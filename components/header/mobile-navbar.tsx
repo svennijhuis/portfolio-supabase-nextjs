@@ -82,7 +82,7 @@ const MobileNavbar = () => {
                     href={item.url}
                   >
                     {item.name}
-                    <div className="h-2 overflow-hidden">
+                    <div className="hidden h-2 overflow-hidden xl:flex">
                       <span className="flex h-auto w-2">
                         <ArrowIcon />
                       </span>

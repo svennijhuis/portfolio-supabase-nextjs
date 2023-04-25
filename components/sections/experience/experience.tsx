@@ -94,8 +94,6 @@ const Experience = () => {
     },
   ];
 
-  useState(Skills);
-
   useEffect(() => {
     if (subject === "WorkExperience") {
       setData(WorkExperience);
