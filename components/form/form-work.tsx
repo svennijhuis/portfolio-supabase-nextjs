@@ -2,7 +2,7 @@
 
 import { Input } from "./input-field";
 import supabase from "@/utils/supabase";
-import { useForm, useFieldArray, Control, FieldError } from "react-hook-form";
+import { useForm, useFieldArray, FieldError } from "react-hook-form";
 
 type FormData = {
   title: string;

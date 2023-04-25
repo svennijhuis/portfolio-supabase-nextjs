@@ -5,7 +5,6 @@ const Footer = () => {
     <section className="bg-gray ">
       <div className="container ">
         <div className="border-t-[1px] border-grayDark/40">
-          {" "}
           <Paragraph
             className="py-2 text-center"
             size={"sm"}

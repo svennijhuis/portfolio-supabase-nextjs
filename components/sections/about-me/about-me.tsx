@@ -9,7 +9,10 @@ import Image from "next/image";
 
 const AboutMe = () => {
   return (
-    <section className="container relative grid grid-cols-1 gap-2 overflow-hidden md:grid-cols-2 md:gap-5">
+    <section
+      id="about-me"
+      className="container relative grid grid-cols-1 gap-2 overflow-hidden md:grid-cols-2 md:gap-5"
+    >
       <article className=" col-span-1 mt-8 flex justify-between md:mt-12">
         <TitleSmall>About me</TitleSmall>
         <InViewFadeIn delay={0.8} time={0.8}>

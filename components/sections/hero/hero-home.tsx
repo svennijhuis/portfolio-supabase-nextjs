@@ -2,7 +2,7 @@
 
 import AnimatedTextWord from "@/components/animation/AnimatedText";
 import InViewFadeIn from "@/components/animation/inview-fade-in";
-import ScaleOnScrollTest from "@/components/animation/scale-on-scroll";
+import ScaleOnScroll from "@/components/animation/scale-on-scroll";
 import LinkStyling from "@/components/buttons/link-styling";
 import H1 from "@/components/text/H1";
 import Paragraph from "@/components/text/paragraph";
@@ -36,7 +36,7 @@ const HeroHome = ({ data }: any) => {
   console.log(heroData);
 
   return (
-    <ScaleOnScrollTest className="pb-10 pt-12 md:pt-[180px]">
+    <ScaleOnScroll className="pb-10 pt-12 md:pt-[180px]">
       <section className="container grid grid-cols-1 md:grid-cols-2">
         <article className="col-span-1 mb-2 md:col-span-2 md:mb-3">
           <H1 className="max-w-[1200px] text-black">
@@ -95,7 +95,7 @@ const HeroHome = ({ data }: any) => {
           </InViewFadeIn>
         </article>
       </section>
-    </ScaleOnScrollTest>
+    </ScaleOnScroll>
   );
 };
 export default HeroHome;

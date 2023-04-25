@@ -8,7 +8,7 @@ interface ScaleOnScrollProps {
   className?: string;
 }
 
-const ScaleOnScrollTest = ({ children, className }: ScaleOnScrollProps) => {
+const ScaleOnScroll = ({ children, className }: ScaleOnScrollProps) => {
   const targetRef = useRef(null);
   const { scrollY } = useScroll({
     target: targetRef,
@@ -27,4 +27,4 @@ const ScaleOnScrollTest = ({ children, className }: ScaleOnScrollProps) => {
   );
 };
 
-export default ScaleOnScrollTest;
+export default ScaleOnScroll;

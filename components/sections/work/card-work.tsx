@@ -5,7 +5,6 @@ import LinkStyling from "@/components/buttons/link-styling";
 import Paragraph from "@/components/text/paragraph";
 import { Variants, motion, useInView } from "framer-motion";
 import Image from "next/image";
-import { useRef } from "react";
 
 interface CardWorkProps {
   children: React.ReactNode;

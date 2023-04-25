@@ -52,7 +52,7 @@ const ImageGallery = () => {
           <ParallaxScrollSection className="flex flex-col gap-3" speed={10}>
             {data.map((item: any, index: number) => (
               <Image
-                className="mb-[15px] aspect-video  w-full rounded-md object-cover  md:mb-3"
+                className="mb-[15px] aspect-video  w-full rounded-md object-cover md:mb-3  md:rounded-xl"
                 key={index}
                 src={item.src}
                 alt={item.title}
@@ -66,7 +66,7 @@ const ImageGallery = () => {
           <ParallaxScrollSection speed={-10}>
             {data.map((item: any, index: number) => (
               <Image
-                className="mb-[15px] aspect-video  w-full rounded-md object-cover  md:mb-3"
+                className="mb-[15px] aspect-video  w-full rounded-md object-cover md:mb-3  md:rounded-xl"
                 key={index}
                 src={item.src}
                 alt={item.title}
@@ -80,7 +80,7 @@ const ImageGallery = () => {
           <ParallaxScrollSection speed={10}>
             {data.map((item: any, index: number) => (
               <Image
-                className="mb-[15px] aspect-video  w-full rounded-md object-cover  md:mb-3"
+                className="mb-[15px] aspect-video  w-full rounded-md object-cover md:mb-3  md:rounded-xl"
                 key={index}
                 src={item.src}
                 alt={item.title}

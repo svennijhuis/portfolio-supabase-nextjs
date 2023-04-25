@@ -106,8 +106,7 @@ const Experience = () => {
 
   return (
     <>
-      {" "}
-      <div ref={myRef} className="mt-[-120px] pt-12"></div>
+      <div id="experience" ref={myRef} className="mt-[-60px] pt-6"></div>
       <section className="bg-softBlack py-8 md:py-12">
         <div className="container grid grid-cols-1 md:grid-cols-2 md:gap-5">
           <div className=" col-span-1 ">

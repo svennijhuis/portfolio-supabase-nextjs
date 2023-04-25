@@ -1,39 +1,14 @@
+import { Icon } from "./icon-button";
 import styles from "./link.module.scss";
-import ArrowIcon from "@/public/icons/arrow-icon";
-import BookIcon from "@/public/icons/book-icon";
-import DevelopmentIcon from "@/public/icons/development-icon";
-import EyeIcon from "@/public/icons/eye-icon";
-import GridIcon from "@/public/icons/grid-icon";
-import MailIcon from "@/public/icons/mail-icon";
-import PhoneIcon from "@/public/icons/phone-icon";
-import ScreenIcon from "@/public/icons/screen-icon";
-import WorkIcon from "@/public/icons/work-icon";
+import { cn } from "@/utils/class-merge";
 import clsx from "clsx";
 
 interface ButtonFormProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
   className?: string;
-  icon?:
-    | "arrow"
-    | "book"
-    | "development"
-    | "eye"
-    | "grid"
-    | "mail"
-    | "phone"
-    | "screen"
-    | "work";
-  iconHover?:
-    | "arrow"
-    | "book"
-    | "development"
-    | "eye"
-    | "grid"
-    | "mail"
-    | "phone"
-    | "screen"
-    | "work";
+  icon?: string;
+  iconHover?: string;
   color: "black" | "gray";
 }
 
@@ -69,57 +44,11 @@ const ButtonForm = ({
           }
         )}
       >
-        <span
-          className={clsx({
-            "": color === "black",
-            invert: color === "gray",
-          })}
-        >
-          {icon === "arrow" ? (
-            <ArrowIcon />
-          ) : icon === "book" ? (
-            <BookIcon />
-          ) : icon === "development" ? (
-            <DevelopmentIcon />
-          ) : icon === "eye" ? (
-            <EyeIcon />
-          ) : icon === "grid" ? (
-            <GridIcon />
-          ) : icon === "mail" ? (
-            <MailIcon />
-          ) : icon === "phone" ? (
-            <PhoneIcon />
-          ) : icon === "screen" ? (
-            <ScreenIcon />
-          ) : icon === "work" ? (
-            <WorkIcon />
-          ) : null}
+        <span className={cn({ invert: color === "gray" })}>
+          {icon && <Icon icon={icon} />}
         </span>
-        <span
-          className={clsx({
-            "": color === "black",
-            invert: color === "gray",
-          })}
-        >
-          {iconHover === "arrow" ? (
-            <ArrowIcon />
-          ) : iconHover === "book" ? (
-            <BookIcon />
-          ) : iconHover === "development" ? (
-            <DevelopmentIcon />
-          ) : iconHover === "eye" ? (
-            <EyeIcon />
-          ) : iconHover === "grid" ? (
-            <GridIcon />
-          ) : iconHover === "mail" ? (
-            <MailIcon />
-          ) : iconHover === "phone" ? (
-            <PhoneIcon />
-          ) : iconHover === "screen" ? (
-            <ScreenIcon />
-          ) : iconHover === "work" ? (
-            <WorkIcon />
-          ) : null}
+        <span className={cn({ invert: color === "gray" })}>
+          {iconHover && <Icon icon={iconHover} />}
         </span>
       </div>
     </button>

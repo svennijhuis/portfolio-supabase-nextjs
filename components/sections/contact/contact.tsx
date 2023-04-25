@@ -7,7 +7,7 @@ import TitleSmall from "@/components/text/title-small";
 
 const Contact = () => {
   return (
-    <section className="bg-gray py-8 md:py-12">
+    <section id="contact" className="bg-gray py-8 md:py-12">
       <div className="container grid grid-cols-1 md:grid-cols-2 md:gap-5">
         <article className="col-span-1">
           <TitleSmall className="mb-2">Work</TitleSmall>
