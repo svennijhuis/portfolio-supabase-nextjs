@@ -41,6 +41,7 @@ const MobileNavbar = () => {
     elem?.scrollIntoView({
       behavior: "smooth",
     });
+    setIsOpen(!isOpen);
   };
 
   return (
