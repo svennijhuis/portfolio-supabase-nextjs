@@ -35,6 +35,7 @@ const Contact = () => {
             </Paragraph>
             <div className="mt-2 flex flex-wrap gap-2 md:mt-3 ">
               <LinkStyling
+                target="_blank"
                 href="https://www.linkedin.com/in/sven-nijhuis/"
                 color="black"
                 icon="arrow"
@@ -43,6 +44,7 @@ const Contact = () => {
                 LinkedIn
               </LinkStyling>
               <LinkStyling
+                target="_blank"
                 href="https://github.com/svennijhuis"
                 color="black"
                 icon="arrow"
