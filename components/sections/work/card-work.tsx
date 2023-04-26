@@ -93,8 +93,8 @@ const CardWork = ({
         </motion.div>
       </div>
       <InViewFadeIn delay={0.5} time={0.5}>
-        <div className="mt-2 grid grid-cols-3 gap-1">
-          <h4 className="col-span-3 pl-1 text-20 font-medium text-black hover:opacity-80 hover:transition-all md:col-span-1">
+        <div className="mt-1 grid grid-cols-3 gap-1 md:mt-2">
+          <h4 className="col-span-3 pr-1 text-20 font-medium text-black hover:opacity-80 hover:transition-all md:col-span-1">
             <Link href={urlProject}>{title}</Link>
           </h4>
 

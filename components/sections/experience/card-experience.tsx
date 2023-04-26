@@ -34,7 +34,7 @@ const CardExperience = ({
   icon,
 }: CardExperienceProps) => {
   return (
-    <article className="sticky top-10 flex h-[225px] flex-col justify-between rounded-2xl border-[1px] border-black/20 bg-gray p-2 md:top-[200px]">
+    <article className="sticky top-10 flex h-[300px] flex-col justify-between rounded-2xl border-[1px] border-black/20 bg-gray p-1 md:top-[200px] md:h-[225px] md:p-2">
       <div className="flex gap-2">
         <div
           className={clsx(
@@ -63,13 +63,13 @@ const CardExperience = ({
           ) : null}
         </div>
         <div className="flex flex-col">
-          <h4 className="mb-1 text-20 font-medium">{title}</h4>
+          <h4 className="mb-1 text-18 font-medium md:text-20">{title}</h4>
           <div className="flex flex-wrap gap-1">{children}</div>
         </div>
       </div>
 
       <Paragraph
-        className="pb-[5px] pr-1"
+        className="flex h-full items-center pb-[5px] pr-1 md:items-end"
         size="sm"
         color="black"
         fontWeight="light"
