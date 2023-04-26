@@ -87,6 +87,7 @@ const CardWork = ({
             icon="arrow"
             iconHover="eye"
             color="gray"
+            target="_blank"
           >
             View
           </LinkStyling>
@@ -95,7 +96,9 @@ const CardWork = ({
       <InViewFadeIn delay={0.5} time={0.5}>
         <div className="mt-1 grid grid-cols-3 gap-1 md:mt-2">
           <h4 className="col-span-3 pr-1 text-20 font-medium text-black hover:opacity-80 hover:transition-all md:col-span-1">
-            <Link href={urlProject}>{title}</Link>
+            <Link target="_blank" href={urlProject}>
+              {title}
+            </Link>
           </h4>
 
           <div className="col-span-3 md:col-span-2 md:mr-2">
