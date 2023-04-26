@@ -9,7 +9,7 @@ const H1 = ({ children, className }: H1Props) => {
   return (
     <h1
       className={clsx(
-        "text-normal text-40 uppercase leading-40 text-black sm:text-55 sm:leading-55 md:text-[100px] md:leading-110",
+        "text-normal text-38 uppercase leading-40 text-black sm:text-55 sm:leading-55 md:text-[100px] md:leading-110",
         className
       )}
     >

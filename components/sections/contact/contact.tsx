@@ -19,7 +19,7 @@ const Contact = () => {
               className="mr-1 uppercase"
               darkWords={[false, true]}
               marginView="-30% 0% -25% 0%"
-              loadingHeight="min-h-[140px]"
+              loadingHeight="min-h-[40px] md:min-h-[50px]"
             />
           </H3>
           <InViewFadeIn delay={1.3} time={0.8}>

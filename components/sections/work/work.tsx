@@ -70,7 +70,7 @@ const Work = () => {
               className="mr-1 uppercase"
               darkWords={[true, true, false, false]}
               marginView="-30% 0% -25% 0%"
-              loadingHeight="min-h-[140px]"
+              loadingHeight="min-h-[80px] md:min-h-[100px]"
             />
           </H3>
           <InViewFadeIn delay={1.3} time={0.8}>

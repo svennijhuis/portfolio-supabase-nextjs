@@ -156,7 +156,7 @@ const Experience = () => {
                   className="mr-1 uppercase"
                   darkWords={[false, true, false]}
                   marginView="-30% 0% -25% 0%"
-                  loadingHeight="min-h-[70px]"
+                  loadingHeight="min-h-[80px] md:min-h-[100px]"
                 />
               </H3>
               <Paragraph
