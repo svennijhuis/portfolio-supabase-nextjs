@@ -1,4 +1,7 @@
-import imageWork from "../../../public/images/work.png";
+import ampere from "../../../public/images/ampere.png";
+import dynamicCharting from "../../../public/images/dynamic-chart.png";
+import gapstars from "../../../public/images/gapstars.png";
+import svenNijhuis from "../../../public/images/portfolio-sven.png";
 import CardWork from "./card-work";
 import AnimatedTextWord from "@/components/animation/AnimatedText";
 import InViewFadeIn from "@/components/animation/inview-fade-in";
@@ -10,7 +13,7 @@ const Work = () => {
   const data = [
     {
       title: "Gapstars",
-      imageSrc: imageWork,
+      imageSrc: gapstars,
       viewUrl: "https://daysix.nl",
       nameUrl: "Day six",
       text: "A dynamic website that provides limitless possibilities. I created this website on behalf of ",
@@ -19,7 +22,7 @@ const Work = () => {
     },
     {
       title: "Sven Nijhuis Portfolio",
-      imageSrc: imageWork,
+      imageSrc: svenNijhuis,
       viewUrl: "",
       nameUrl: "",
       text: "This is my personal portfolio, created to showcase who I am and where I aspire to go.",
@@ -35,7 +38,7 @@ const Work = () => {
     },
     {
       title: "Dynamic Charting",
-      imageSrc: imageWork,
+      imageSrc: dynamicCharting,
       viewUrl: "",
       nameUrl: "",
       text: "This project was created for school. I had to create a dynamic chart.",
@@ -45,7 +48,7 @@ const Work = () => {
     },
     {
       title: "Ampère",
-      imageSrc: imageWork,
+      imageSrc: ampere,
       viewUrl: "https://daysix.nl",
       nameUrl: "Day six",
       text: "I contributed to building the single page with attention to detail. I created this website on behalf of ",

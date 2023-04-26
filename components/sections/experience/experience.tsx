@@ -16,7 +16,7 @@ const Experience = () => {
   const WorkExperience: any = [
     {
       title: "Front-end Web Development",
-      icon: "grid",
+      icon: "work",
       text: "I have been working at Day-Six since April 2021, primarily focusing on frontend development. Additionally, I have experience creating small custom plugins and themes",
       subjectArray: [
         "React.tjs",
@@ -28,25 +28,25 @@ const Experience = () => {
     },
     {
       title: "Shop Assistant & B2B Maintenance",
-      icon: "grid",
+      icon: "work",
       text: "I was employed at Fietskledingvoordeel.nl from October 2019 to April 2021, where I was primarily responsible for customer service both in-store and online. Additionally, I was involved in uploading articles to the webshop.",
       subjectArray: ["Magento 2", "customer service", "B2B"],
     },
     {
       title: "Cyclist",
-      icon: "grid",
+      icon: "work",
       text: "From January 2018 to October 2019, I was a member of the Volkerwessels-Merckx Cycling Team and competed in cycling races both domestically and internationally.",
       subjectArray: ["challenges"],
     },
     {
       title: "Marketing & Communications Intern",
-      icon: "grid",
+      icon: "work",
       text: "From November 2018 to April 2019, I worked as an intern at Racefietsblog.nl. My main responsibilities included assisting with events and conducting interviews for the website.",
       subjectArray: ["Marketing", "Communications", "Social Media"],
     },
     {
       title: "Marketing & Communications Assistant",
-      icon: "grid",
+      icon: "work",
       text: "I was employed at Van Walraven from April 2017 to September 2018, where I primarily worked on organizing events. Additionally, I used Photoshop and InDesign to create posters and job vacancies for clients.",
       subjectArray: ["Marketing", "Communications", "Social Media"],
     },
@@ -55,21 +55,21 @@ const Experience = () => {
   const School: any = [
     {
       title: "Communication and Multimedia Design (HBO)",
-      icon: "book",
+      icon: "grid",
       text: "CMD at the Hogeschool van Amsterdam teaches students how to communicate effectively with clients online, with a focus on digital development. The program emphasizes research and strategy to create successful digital communication solutions.",
       subjectArray: ["Development", "UX Design", "Research"],
       duration: "2020 - 2024",
     },
     {
       title: "Minor Blockchain Development",
-      icon: "book",
+      icon: "grid",
       text: "Minor Blockchain Development at the Hogeschool van Amsterdam provides an introduction to blockchain technology and challenges students to create a web3 dapp.",
       subjectArray: ["Blockchain", "Smart Contracts", "Decentralized Apps"],
       duration: "2023 - heden",
     },
     {
       title: "Minor information design",
-      icon: "book",
+      icon: "grid",
       text: "The Minor Information Design program at the Hogeschool van Amsterdam focuses on teaching students how to effectively visualize data and explore various options for web development.",
       subjectArray: [
         "D3.js",
@@ -82,14 +82,14 @@ const Experience = () => {
     },
     {
       title: "Marketing and Communication (MBO niveau 4)",
-      icon: "book",
+      icon: "grid",
       text: "Johan Cruyff College is a school for elite athletes that offers a Marketing and Communication vocational education program alongside their athletic pursuits",
       subjectArray: ["Marketing", "Communication", "Sales"],
       duration: "2016 - 2019",
     },
     {
       title: "Vmbo-T",
-      icon: "book",
+      icon: "grid",
       text: "I attended VMBO-T at Veenlanden College Vinkeveen, which is a regular school.",
       subjectArray: ["General Education"],
       duration: "2013 - 2016",
@@ -99,31 +99,31 @@ const Experience = () => {
   const Skills: any = [
     {
       title: "React.js",
-      icon: "grid",
+      icon: "development",
       text: "As a skilled web developer, I specialize in React.js and creating dynamic user interfaces. I also have expertise in related technologies like Next.js, Tailwind CSS, and Framer Motion. ",
       subjectArray: ["React.js", "Next.js", "Tailwind CSS", "Framer Motion"],
     },
     {
       title: "Express (NestJS)",
-      icon: "grid",
+      icon: "development",
       text: "I like using Express (NestJS) to create APIs for web applications. It's my preferred framework for connecting the backend with the frontend and databases, and I've used it extensively for personal projects.",
       subjectArray: ["Express", "Next.js", "Nest.js", "Turborepo"],
     },
     {
       title: "Solidity",
-      icon: "grid",
+      icon: "development",
       text: "Although I am relatively new to Solidity, I find the concept of smart contract development on the Ethereum blockchain fascinating. I am excited to continue learning and exploring this technology.",
       subjectArray: ["React.js", "Solidity", "Web3.js", "Ethereum"],
     },
     {
       title: "Supabase/Prisma",
-      icon: "grid",
+      icon: "development",
       text: "I'm excited to be expanding my skill set by diving into Supabase and Prisma! These powerful tools are great for building secure and scalable backends for web applications, and I'm eager to master them to take my projects to the next level.",
       subjectArray: ["Supabase", "Prisma", "PostgreSQL"],
     },
     {
       title: "PHP",
-      icon: "grid",
+      icon: "development",
       text: "I have used PHP for a variety of projects, including developing custom themes and plugins for WordPress. ",
       subjectArray: ["PHP"],
     },

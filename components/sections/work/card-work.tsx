@@ -70,8 +70,8 @@ const CardWork = ({
             className="h-full w-full rounded-xl object-cover md:rounded-2xl"
             src={imageSrc}
             alt={title}
-            width={400}
-            height={400}
+            width={1000}
+            height={1000}
           />
         </motion.div>
         <motion.div

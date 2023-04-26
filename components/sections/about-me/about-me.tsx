@@ -1,4 +1,4 @@
-import ImageProfile from "../../../public/images/work.png";
+import ImageProfile from "../../../public/images/sven.webp";
 import InViewFadeIn from "@/components/animation/inview-fade-in";
 import RotateOnScroll from "@/components/animation/rotate-onscroll";
 import LinkStyling from "@/components/buttons/link-styling";

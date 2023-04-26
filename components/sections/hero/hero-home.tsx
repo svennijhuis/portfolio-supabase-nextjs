@@ -6,34 +6,32 @@ import ScaleOnScroll from "@/components/animation/scale-on-scroll";
 import LinkStyling from "@/components/buttons/link-styling";
 import H1 from "@/components/text/H1";
 import Paragraph from "@/components/text/paragraph";
-import supabase from "@/utils/supabase";
-import { useEffect, useState } from "react";
 
 const HeroHome = ({ data }: any) => {
-  console.log(data);
-  const [heroData, setHeroData] = useState(data);
-  useEffect(() => {
-    const channel = supabase
-      .channel("realtime posts")
-      .on(
-        "postgres_changes",
-        {
-          event: "UPDATE",
-          schema: "public",
-          table: "home",
-        },
-        payload => {
-          setHeroData(payload.new);
-        }
-      )
-      .subscribe();
+  // console.log(data);
+  // const [heroData, setHeroData] = useState(data);
+  // useEffect(() => {
+  //   const channel = supabase
+  //     .channel("realtime posts")
+  //     .on(
+  //       "postgres_changes",
+  //       {
+  //         event: "UPDATE",
+  //         schema: "public",
+  //         table: "home",
+  //       },
+  //       payload => {
+  //         setHeroData(payload.new);
+  //       }
+  //     )
+  //     .subscribe();
 
-    return () => {
-      supabase.removeChannel(channel);
-    };
-  }, [supabase, heroData, setHeroData]);
+  //   return () => {
+  //     supabase.removeChannel(channel);
+  //   };
+  // }, [supabase, heroData, setHeroData]);
 
-  console.log(heroData);
+  // console.log(heroData);
 
   return (
     <ScaleOnScroll className="pb-10 pt-12 md:pt-[180px]">
