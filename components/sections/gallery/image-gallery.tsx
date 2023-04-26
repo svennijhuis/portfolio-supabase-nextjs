@@ -10,18 +10,6 @@ import Scanner from "../../../public/images/scanner.png";
 import ParallaxScrollSection from "./parallax-scroll-section";
 import Image from "next/image";
 
-interface MappingImageProps {
-  children: React.ReactNode;
-}
-
-const MappingImage = ({ children }: MappingImageProps) => {
-  return (
-    <>
-      {children} {children}
-    </>
-  );
-};
-
 const ImageGallery = () => {
   const data = [
     {
@@ -56,60 +44,54 @@ const ImageGallery = () => {
   ];
 
   return (
-    <div className="max-w-screen relative h-[150vh] overflow-hidden">
-      <section className=" absolute left-1/2 top-0 grid  h-[150vh] w-[190vw] -translate-x-1/2 transform grid-cols-3 gap-[15px] overflow-hidden bg-softBlack sm:w-[160vw] md:w-[140vw] md:gap-3">
+    <div className="max-w-screen  relative h-[100vh] overflow-hidden md:h-[150vh]">
+      <section className=" absolute left-1/2 top-0 grid h-[100vh] w-[190vw] -translate-x-1/2 transform grid-cols-3 gap-[15px] overflow-hidden bg-softBlack sm:w-[160vw] md:h-[150vh] md:w-[140vw] md:gap-3">
         <div className="relative col-span-1 h-full">
           <ParallaxScrollSection className="flex flex-col gap-3" speed={15}>
-            <MappingImage>
-              {data
-                .sort(() => Math.random() - 0.5)
-                .map((item: any, index: number) => (
-                  <Image
-                    className="mb-[15px] aspect-video  w-full rounded-md object-cover md:mb-3  md:rounded-xl"
-                    key={index}
-                    src={item.src}
-                    alt={item.title}
-                    width={1000}
-                    height={1000}
-                  />
-                ))}
-            </MappingImage>
+            {data
+              .sort(() => Math.random() - 0.5)
+              .map((item: any, index: number) => (
+                <Image
+                  className="mb-[15px] aspect-video  w-full rounded-md object-cover md:mb-3  md:rounded-xl"
+                  key={index}
+                  src={item.src}
+                  alt={item.title}
+                  width={1000}
+                  height={1000}
+                />
+              ))}
           </ParallaxScrollSection>
         </div>
         <div className="relative col-span-1 h-full">
           <ParallaxScrollSection speed={-10}>
-            <MappingImage>
-              {data
-                .sort(() => Math.random() - 0.5)
-                .map((item: any, index: number) => (
-                  <Image
-                    className="mb-[15px] aspect-video  w-full rounded-md object-cover md:mb-3  md:rounded-xl"
-                    key={index}
-                    src={item.src}
-                    alt={item.title}
-                    width={1000}
-                    height={1000}
-                  />
-                ))}
-            </MappingImage>
+            {data
+              .sort(() => Math.random() - 0.5)
+              .map((item: any, index: number) => (
+                <Image
+                  className="mb-[15px] aspect-video  w-full rounded-md object-cover md:mb-3  md:rounded-xl"
+                  key={index}
+                  src={item.src}
+                  alt={item.title}
+                  width={1000}
+                  height={1000}
+                />
+              ))}
           </ParallaxScrollSection>
         </div>
         <div className="relative col-span-1 h-full">
           <ParallaxScrollSection speed={10}>
-            <MappingImage>
-              {data
-                .sort(() => Math.random() - 0.5)
-                .map((item: any, index: number) => (
-                  <Image
-                    className="mb-[15px] aspect-video  w-full rounded-md object-cover md:mb-3  md:rounded-xl"
-                    key={index}
-                    src={item.src}
-                    alt={item.title}
-                    width={1000}
-                    height={1000}
-                  />
-                ))}
-            </MappingImage>
+            {data
+              .sort(() => Math.random() - 0.5)
+              .map((item: any, index: number) => (
+                <Image
+                  className="mb-[15px] aspect-video  w-full rounded-md object-cover md:mb-3  md:rounded-xl"
+                  key={index}
+                  src={item.src}
+                  alt={item.title}
+                  width={1000}
+                  height={1000}
+                />
+              ))}
           </ParallaxScrollSection>
         </div>
       </section>
