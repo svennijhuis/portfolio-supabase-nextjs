@@ -19,7 +19,7 @@ const Paragraph = ({
     <p
       className={clsx("", className, {
         // Size
-        "text-14": size === "sm",
+        "text-15 leading-25": size === "sm",
         "text-16 md:text-18": size === "md",
         "text-21": size === "lg",
         // Color

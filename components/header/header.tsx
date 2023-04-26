@@ -15,7 +15,7 @@ const Header = () => {
         </div>
         <div className="col-span-1 flex justify-end gap-2">
           <LinkStyling
-            href="/contact"
+            href="/#contact"
             color="gray"
             icon="arrow"
             iconHover="mail"

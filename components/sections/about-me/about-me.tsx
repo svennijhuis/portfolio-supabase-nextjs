@@ -36,9 +36,9 @@ const AboutMe = () => {
             color="black"
             fontWeight="normal"
           >
-            Welcome my world! I am Daniel, a dedicated and creative freelance
-            digital designer striving to create projects that I can be proud of.
-            I am a member of the Awwwards young.
+            Hey there! I'm Sven Nijhuis, a 24-year-old web developer based in
+            Amsterdam. I have experience working with React and NestJS, and I'm
+            also familiar with Solidity web3.
           </Paragraph>
           <Paragraph
             className="mb-2 md:mb-3"
@@ -46,14 +46,21 @@ const AboutMe = () => {
             color="black"
             fontWeight="light"
           >
-            Welcome my world! I am Daniel, a dedicated and creative freelance
-            digital designer striving to create projects that I can be proud of.
-            I am a member of the Awwwards young jury 2023 and I specialise in
-            delivering digital services including bespoke web design and Webflow
-            development.
+            I'm dedicated to continuously expanding my skills and expertise in
+            web development. I currently work at Day-Six, a web development
+            agency based in Mijdrecht, where I specialize in front-end
+            development. Although my primary focus is front-end development, I'm
+            also keen on learning more about backend development. To achieve
+            this, I work on personal projects, and I attend courses at the
+            Hogeschool van Amsterdam (HvA) to expand my knowledge in this area.
+            <br />
+            <br />
+            My background in competitive cycling has taught me the value of
+            perseverance and communication skills, which I apply in my work as a
+            developer.
           </Paragraph>
-          <LinkStyling href="/" icon="arrow" iconHover="eye" color="gray">
-            More information
+          <LinkStyling href="/#work" icon="arrow" iconHover="eye" color="gray">
+            See my work
           </LinkStyling>
         </InViewFadeIn>
       </article>

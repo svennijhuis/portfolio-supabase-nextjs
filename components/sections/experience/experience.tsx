@@ -15,82 +15,117 @@ const Experience = () => {
 
   const WorkExperience: any = [
     {
-      title: "Sneaker Store",
+      title: "Front-end Web Development",
       icon: "grid",
-      text: "Een nieuwe look en website voor voor sneaker store in opdracht van ",
-      subjectArray: ["Reactjs", "Nextjs", "Tailwindcss"],
+      text: "I have been working at Day-Six since April 2021, primarily focusing on frontend development. Additionally, I have experience creating small custom plugins and themes",
+      subjectArray: [
+        "React.tjs",
+        "Tailwind CSS",
+        "PHP",
+        "GSAP",
+        "Gutenburg blocks",
+      ],
     },
     {
-      title: "Sneaker Store",
+      title: "Shop Assistant & B2B Maintenance",
       icon: "grid",
-      text: "Een nieuwe look en website voor voor sneaker store in opdracht van ",
-      subjectArray: ["Reactjs", "Nextjs", "Tailwindcss"],
+      text: "I was employed at Fietskledingvoordeel.nl from October 2019 to April 2021, where I was primarily responsible for customer service both in-store and online. Additionally, I was involved in uploading articles to the webshop.",
+      subjectArray: ["Magento 2", "customer service", "B2B"],
     },
     {
-      title: "Sneaker Store",
+      title: "Cyclist",
       icon: "grid",
-      text: "Een nieuwe look en website voor voor sneaker store in opdracht van ",
-      subjectArray: ["Reactjs", "Nextjs", "Tailwindcss"],
+      text: "From January 2018 to October 2019, I was a member of the Volkerwessels-Merckx Cycling Team and competed in cycling races both domestically and internationally.",
+      subjectArray: ["challenges"],
     },
     {
-      title: "Sneaker Store",
+      title: "Marketing & Communications Intern",
       icon: "grid",
-      text: "Een nieuwe look en website voor voor sneaker store in opdracht van ",
-      subjectArray: ["Reactjs", "Nextjs", "Tailwindcss"],
+      text: "From November 2018 to April 2019, I worked as an intern at Racefietsblog.nl. My main responsibilities included assisting with events and conducting interviews for the website.",
+      subjectArray: ["Marketing", "Communications", "Social Media"],
+    },
+    {
+      title: "Marketing & Communications Assistant",
+      icon: "grid",
+      text: "I was employed at Van Walraven from April 2017 to September 2018, where I primarily worked on organizing events. Additionally, I used Photoshop and InDesign to create posters and job vacancies for clients.",
+      subjectArray: ["Marketing", "Communications", "Social Media"],
     },
   ];
 
   const School: any = [
     {
-      title: "Sneakeadsdasr Store",
-      icon: "grid",
-      text: "Een nieuwe look en website voor voor sneaker store in opdracht van ",
-      subjectArray: ["Reactjs", "Nextjs", "Tailwindcss"],
+      title: "Communication and Multimedia Design (HBO)",
+      icon: "book",
+      text: "CMD at the Hogeschool van Amsterdam teaches students how to communicate effectively with clients online, with a focus on digital development. The program emphasizes research and strategy to create successful digital communication solutions.",
+      subjectArray: ["Development", "UX Design", "Research"],
+      duration: "2020 - 2024",
     },
     {
-      title: "Sneaker Store",
-      icon: "grid",
-      text: "Een nieuwe look en website voor voor sneaker store in opdracht van ",
-      subjectArray: ["Reactjs", "Nextjs", "Tailwindcss"],
+      title: "Minor Blockchain Development",
+      icon: "book",
+      text: "Minor Blockchain Development at the Hogeschool van Amsterdam provides an introduction to blockchain technology and challenges students to create a web3 dapp.",
+      subjectArray: ["Blockchain", "Smart Contracts", "Decentralized Apps"],
+      duration: "2023 - heden",
     },
     {
-      title: "Sneaker Store",
-      icon: "grid",
-      text: "Een nieuwe look en website voor voor sneaker store in opdracht van ",
-      subjectArray: ["Reactjs", "Nextjs", "Tailwindcss"],
+      title: "Minor information design",
+      icon: "book",
+      text: "The Minor Information Design program at the Hogeschool van Amsterdam focuses on teaching students how to effectively visualize data and explore various options for web development.",
+      subjectArray: [
+        "D3.js",
+        "React.js",
+        "Data Visualization",
+        "UX Design",
+        "Interaction Design",
+      ],
+      duration: "2022-2023",
     },
     {
-      title: "Sneaker Store",
-      icon: "grid",
-      text: "Een nieuwe look en website voor voor sneaker store in opdracht van ",
-      subjectArray: ["Reactjs", "Nextjs", "Tailwindcss"],
+      title: "Marketing and Communication (MBO niveau 4)",
+      icon: "book",
+      text: "Johan Cruyff College is a school for elite athletes that offers a Marketing and Communication vocational education program alongside their athletic pursuits",
+      subjectArray: ["Marketing", "Communication", "Sales"],
+      duration: "2016 - 2019",
+    },
+    {
+      title: "Vmbo-T",
+      icon: "book",
+      text: "I attended VMBO-T at Veenlanden College Vinkeveen, which is a regular school.",
+      subjectArray: ["General Education"],
+      duration: "2013 - 2016",
     },
   ];
 
   const Skills: any = [
     {
-      title: "Sneakasdaser Store",
+      title: "React.js",
       icon: "grid",
-      text: "Een nieuwe look en website voor voor sneaker store in opdracht van ",
-      subjectArray: ["Reactjs", "Nextjs", "Tailwindcss"],
+      text: "As a skilled web developer, I specialize in React.js and creating dynamic user interfaces. I also have expertise in related technologies like Next.js, Tailwind CSS, and Framer Motion. ",
+      subjectArray: ["React.js", "Next.js", "Tailwind CSS", "Framer Motion"],
     },
     {
-      title: "Sneaker Store",
+      title: "Express (NestJS)",
       icon: "grid",
-      text: "Een nieuwe look en website voor voor sneaker store in opdracht van ",
-      subjectArray: ["Reactjs", "Nextjs", "Tailwindcss"],
+      text: "I like using Express (NestJS) to create APIs for web applications. It's my preferred framework for connecting the backend with the frontend and databases, and I've used it extensively for personal projects.",
+      subjectArray: ["Express", "Next.js", "Nest.js", "Turborepo"],
     },
     {
-      title: "Sneaker Store",
+      title: "Solidity",
       icon: "grid",
-      text: "Een nieuwe look en website voor voor sneaker store in opdracht van ",
-      subjectArray: ["Reactjs", "Nextjs", "Tailwindcss"],
+      text: "Although I am relatively new to Solidity, I find the concept of smart contract development on the Ethereum blockchain fascinating. I am excited to continue learning and exploring this technology.",
+      subjectArray: ["React.js", "Solidity", "Web3.js", "Ethereum"],
     },
     {
-      title: "Sneaker Store",
+      title: "Supabase/Prisma",
       icon: "grid",
-      text: "Een nieuwe look en website voor voor sneaker store in opdracht van ",
-      subjectArray: ["Reactjs", "Nextjs", "Tailwindcss"],
+      text: "I'm excited to be expanding my skill set by diving into Supabase and Prisma! These powerful tools are great for building secure and scalable backends for web applications, and I'm eager to master them to take my projects to the next level.",
+      subjectArray: ["Supabase", "Prisma", "PostgreSQL"],
+    },
+    {
+      title: "PHP",
+      icon: "grid",
+      text: "I have used PHP for a variety of projects, including developing custom themes and plugins for WordPress. ",
+      subjectArray: ["PHP"],
     },
   ];
 
@@ -113,13 +148,13 @@ const Experience = () => {
             <div className="sticky top-8 md:top-[200px]">
               <TitleSmallDynamic
                 className="mb-2"
-                list={["experience", "work", "test"]}
+                list={["Skills", "Work Experience", "Education"]}
               />
               <H3 className="max-w-[370px] text-white md:max-w-[485px]">
                 <AnimatedTextWord
-                  text="How can help you"
+                  text="Skills, Experience, Education"
                   className="mr-1 uppercase"
-                  darkWords={[false, false, true, true]}
+                  darkWords={[false, true, false]}
                   marginView="-30% 0% -25% 0%"
                   loadingHeight="min-h-[70px]"
                 />
@@ -130,11 +165,10 @@ const Experience = () => {
                 color="white"
                 fontWeight="light"
               >
-                Welcome my world! I am, a dedicated and creative freelance
-                digital designer striving to create projects that I can be proud
-                of. I am a member of the Awwwards young jury 2023 and I
-                specialise in delivering digital services including bespoke web
-                design and Webflow development.
+                With a diverse background in web development, work experience,
+                and education, I have gained valuable skills and the ability to
+                tackle challenges from various perspectives. I am always eager
+                to continue learning and growing in my field.
               </Paragraph>
               <div className="flex flex-wrap gap-2">
                 <ButtonStyling
@@ -183,7 +217,7 @@ const Experience = () => {
                     }
                   }}
                 >
-                  School
+                  Education
                 </ButtonStyling>
               </div>
             </div>

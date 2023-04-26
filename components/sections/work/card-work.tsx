@@ -5,6 +5,7 @@ import LinkStyling from "@/components/buttons/link-styling";
 import Paragraph from "@/components/text/paragraph";
 import { Variants, motion, useInView } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 interface CardWorkProps {
   children: React.ReactNode;
@@ -13,6 +14,7 @@ interface CardWorkProps {
   viewUrl: string;
   nameUrl: string;
   text: string;
+  urlProject: string;
 }
 
 const CardWork = ({
@@ -22,6 +24,7 @@ const CardWork = ({
   nameUrl,
   text,
   children,
+  urlProject,
 }: CardWorkProps) => {
   const cardVariants: Variants = {
     offscreen: {
@@ -61,7 +64,7 @@ const CardWork = ({
           initial="offscreen"
           whileInView="onscreen"
           viewport={{ once: true, margin: "-15% 0% -15% 0%" }}
-          className="relative h-[250px] overflow-hidden  md:h-[350px]"
+          className="relative h-[250px] overflow-hidden md:h-[350px]"
         >
           <Image
             className="h-full w-full rounded-xl object-cover md:rounded-2xl"
@@ -80,7 +83,7 @@ const CardWork = ({
         >
           <LinkStyling
             className="ml-auto"
-            href={viewUrl}
+            href={urlProject}
             icon="arrow"
             iconHover="eye"
             color="gray"
@@ -91,8 +94,8 @@ const CardWork = ({
       </div>
       <InViewFadeIn delay={0.5} time={0.5}>
         <div className="mt-2 grid grid-cols-3 gap-1">
-          <h4 className="col-span-3 text-20 font-medium text-black md:col-span-1">
-            {title}
+          <h4 className="col-span-3 pl-1 text-20 font-medium text-black hover:opacity-80 hover:transition-all md:col-span-1">
+            <Link href={urlProject}>{title}</Link>
           </h4>
 
           <div className="col-span-3 md:col-span-2 md:mr-2">

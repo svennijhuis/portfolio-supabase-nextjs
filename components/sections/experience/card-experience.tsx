@@ -63,12 +63,17 @@ const CardExperience = ({
           ) : null}
         </div>
         <div className="flex flex-col">
-          <h4 className="mb-1">{title}</h4>
+          <h4 className="mb-1 text-20 font-medium">{title}</h4>
           <div className="flex flex-wrap gap-1">{children}</div>
         </div>
       </div>
 
-      <Paragraph size="sm" color="black" fontWeight="light">
+      <Paragraph
+        className="pb-[5px] pr-1"
+        size="sm"
+        color="black"
+        fontWeight="light"
+      >
         {text}
       </Paragraph>
     </article>

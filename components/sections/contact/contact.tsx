@@ -10,14 +10,14 @@ const Contact = () => {
     <section id="contact" className="bg-gray py-8 md:py-12">
       <div className="container grid grid-cols-1 md:grid-cols-2 md:gap-5">
         <article className="col-span-1">
-          <TitleSmall className="mb-2">Work</TitleSmall>
+          <TitleSmall className="mb-2">Contact</TitleSmall>
         </article>
         <article className="col-span-1">
           <H3 className="max-w-[370px] text-black md:max-w-[485px]">
             <AnimatedTextWord
-              text="a few words about me"
+              text="Let's Connect!"
               className="mr-1 uppercase"
-              darkWords={[true, true, false, false]}
+              darkWords={[false, true]}
               marginView="-30% 0% -25% 0%"
               loadingHeight="min-h-[140px]"
             />
@@ -29,26 +29,26 @@ const Contact = () => {
               color="black"
               fontWeight="light"
             >
-              Welcome my world! I am Daniel, a dedicated and creative freelance
-              digital designer striving to create projects that I can be proud
-              of. I am a member of the Awwwards young.
+              I'm always interested in new opportunities and collaborations.
+              Don't hesitate to get in touch with me via the form below or
+              connect with me on LinkedIn. I look forward to hearing from you!
             </Paragraph>
             <div className="mt-2 flex flex-wrap gap-2 md:mt-3 ">
               <LinkStyling
-                href="/contact"
-                color="black"
-                icon="arrow"
-                iconHover="mail"
-              >
-                Contact
-              </LinkStyling>
-              <LinkStyling
-                href="/contact"
+                href="https://www.linkedin.com/in/sven-nijhuis/"
                 color="black"
                 icon="arrow"
                 iconHover="screen"
               >
-                About me
+                LinkedIn
+              </LinkStyling>
+              <LinkStyling
+                href="https://github.com/svennijhuis"
+                color="black"
+                icon="arrow"
+                iconHover="screen"
+              >
+                Github
               </LinkStyling>
             </div>
           </InViewFadeIn>

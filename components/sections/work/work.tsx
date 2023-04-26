@@ -9,36 +9,48 @@ import TitleSmall from "@/components/text/title-small";
 const Work = () => {
   const data = [
     {
-      title: "Sneaker Store",
+      title: "Gapstars",
       imageSrc: imageWork,
-      viewUrl: "",
-      nameUrl: "?Size",
-      text: "Een nieuwe look en website voor voor sneaker store in opdracht van ",
-      tech: ["Reactjs", "Nextjs", "Tailwindcss", "Framer Motion"],
+      viewUrl: "https://daysix.nl",
+      nameUrl: "Day six",
+      text: "A dynamic website that provides limitless possibilities. I created this website on behalf of ",
+      tech: ["Gutenburg blocks", "Tailwind CSS", "PHP"],
+      urlProject: "https://gapstars.net",
     },
     {
-      title: "Sneaker Store",
+      title: "Sven Nijhuis Portfolio",
       imageSrc: imageWork,
       viewUrl: "",
-      nameUrl: "?Size",
-      text: "Een nieuwe look en website voor voor sneaker store in opdracht van ",
-      tech: ["Reactjs", "Nextjs", "Tailwindcss", "Framer Motion"],
+      nameUrl: "",
+      text: "This is my personal portfolio, created to showcase who I am and where I aspire to go.",
+      tech: [
+        "React.js",
+        "Next.js",
+        "Typescript",
+        "Supabase",
+        "Tailwind CSS",
+        "Framer Motion",
+      ],
+      urlProject: "https://github.com/svennijhuis/portfolio-supabase-nextjs",
     },
     {
-      title: "Sneaker Store",
+      title: "Dynamic Charting",
       imageSrc: imageWork,
       viewUrl: "",
-      nameUrl: "?Size",
-      text: "Een nieuwe look en website voor voor sneaker store in opdracht van ",
-      tech: ["Reactjs", "Nextjs", "Tailwindcss", "Framer Motion"],
+      nameUrl: "",
+      text: "This project was created for school. I had to create a dynamic chart.",
+      tech: ["React.js", "Tailwind CSS", "D3.js"],
+      urlProject:
+        "https://github.com/svennijhuis/Stock-chart-with-d3.js-and-react.js",
     },
     {
-      title: "Sneaker Store",
+      title: "Ampère",
       imageSrc: imageWork,
-      viewUrl: "",
-      nameUrl: "?Size",
-      text: "Een nieuwe look en website voor voor sneaker store in opdracht van ",
-      tech: ["Reactjs", "Nextjs", "Tailwindcss", "Framer Motion"],
+      viewUrl: "https://daysix.nl",
+      nameUrl: "Day six",
+      text: "I contributed to building the single page with attention to detail. I created this website on behalf of ",
+      tech: ["PHP", "Tailwind CSS", "GSAP"],
+      urlProject: "https://amperebezorgt.nl",
     },
   ];
 
@@ -51,7 +63,7 @@ const Work = () => {
         <article className="col-span-1">
           <H3 className="max-w-[370px] text-black md:max-w-[485px]">
             <AnimatedTextWord
-              text="a few words about me"
+              text="My work in Web Development"
               className="mr-1 uppercase"
               darkWords={[true, true, false, false]}
               marginView="-30% 0% -25% 0%"
@@ -65,9 +77,10 @@ const Work = () => {
               color="black"
               fontWeight="light"
             >
-              Welcome my world! I am Daniel, a dedicated and creative freelance
-              digital designer striving to create projects that I can be proud
-              of. I am a member of the Awwwards young.
+              You can take a glimpse of my web development portfolio to get a
+              better idea of my work. If you would like to know more or have any
+              questions, feel free to connect with me on LinkedIn. I would be
+              happy to chat with you!
             </Paragraph>
           </InViewFadeIn>
         </article>
@@ -81,6 +94,7 @@ const Work = () => {
             viewUrl={item.viewUrl}
             nameUrl={item.nameUrl}
             text={item.text}
+            urlProject={item.urlProject}
           >
             {item.tech.map((item, index) => (
               <span
