@@ -8,6 +8,22 @@ import Paragraph from "@/components/text/paragraph";
 import TitleSmallDynamic from "@/components/text/title-small-dynamic";
 import { useEffect, useRef, useState } from "react";
 
+interface Card {
+  title: string;
+  text: string;
+  icon:
+    | "arrow"
+    | "book"
+    | "development"
+    | "eye"
+    | "grid"
+    | "mail"
+    | "phone"
+    | "screen"
+    | "work";
+  subjectArray: string[];
+}
+
 const Experience = () => {
   const [subject, setSubject] = useState<string>("Skills");
   const [data, setData] = useState<any[]>([]);
@@ -223,7 +239,7 @@ const Experience = () => {
             </div>
           </div>
           <div className="col-span-1 mt-4 grid gap-2">
-            {data.map((item: any, index: number) => (
+            {data.map((item: Card, index: number) => (
               <CardExperience
                 key={index}
                 title={item.title}
