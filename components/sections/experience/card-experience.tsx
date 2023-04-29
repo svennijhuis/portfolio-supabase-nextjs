@@ -82,4 +82,6 @@ const CardExperience = React.forwardRef<HTMLDivElement, CardExperienceProps>(
   }
 );
 
+CardExperience.displayName = "Card";
+
 export default CardExperience;
