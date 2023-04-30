@@ -82,8 +82,8 @@ const Work = () => {
             >
               You can take a glimpse of my web development portfolio to get a
               better idea of my work. If you would like to know more or have any
-              questions, feel free to connect with me on LinkedIn. I would be
-              happy to chat with you!
+              questions, feel free to connect with me on LinkedIn or e-mail. I
+              would be happy to chat with you!
             </Paragraph>
           </InViewFadeIn>
         </article>

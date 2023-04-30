@@ -37,8 +37,8 @@ const AboutMe = () => {
             fontWeight="normal"
           >
             Hey there! I'm Sven Nijhuis, a 24-year-old web developer based in
-            Amsterdam. I have experience working with React and NestJS, and I'm
-            also familiar with Solidity web3.
+            Amsterdam. I have experience working with frontend and backend web
+            technologies, and I am also familiar with Solidity and Web3.
           </Paragraph>
           <Paragraph
             className="mb-2 md:mb-3"
@@ -50,7 +50,7 @@ const AboutMe = () => {
             web development. I currently work at Day-Six, a web development
             agency based in Mijdrecht, where I specialize in front-end
             development. Although my primary focus is front-end development, I'm
-            also keen on learning more about backend development. To achieve
+            also keep on learning more about backend development. To achieve
             this, I work on personal projects, and I attend courses at the
             Hogeschool van Amsterdam (HvA) to expand my knowledge in this area.
             <br />

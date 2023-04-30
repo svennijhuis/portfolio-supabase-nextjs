@@ -55,9 +55,9 @@ const HeroHome = ({ data }: any) => {
               color="black"
               fontWeight="medium"
             >
-              Continuously striving to improve, I am eager to continue
-              developing my skills and grow as a professional developer while
-              exploring new technologies and approaches.
+              My goal is to continually keep inproving my skills and grow as a
+              professional developer while exploring new technologies and
+              approaches.
             </Paragraph>
           </InViewFadeIn>
         </article>
@@ -69,10 +69,11 @@ const HeroHome = ({ data }: any) => {
               color="black"
               fontWeight="light"
             >
-              Proficient in React, NestJS, TypeScript, Prisma, and Supabase, my
-              focus as a web developer is on creating robust and scalable web
-              applications. Passionate about honing my skills, I am dedicated to
-              mastering these technologies.
+              I am daily engaged in the technologies React, NestJS, TypeScript,
+              Prisma, and Supabase. My focus as a web developer is on creating
+              robust and scalable web applications. I'm passionate about honing
+              my skills and dedicated to mastering all the latest technologies
+              in the field of web development.
             </Paragraph>
             <div className="flex gap-2 md:gap-3">
               <LinkStyling

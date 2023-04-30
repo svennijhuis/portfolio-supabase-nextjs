@@ -30,8 +30,8 @@ const Contact = () => {
               fontWeight="light"
             >
               I'm always interested in new opportunities and collaborations.
-              Don't hesitate to get in touch with me via the form below or
-              connect with me on LinkedIn. I look forward to hearing from you!
+              Don't hesitate to get in touch with me via e-mail or connect with
+              me on LinkedIn. I look forward to hearing from you!
             </Paragraph>
             <div className="mt-2 flex flex-wrap gap-2 md:mt-3 ">
               <LinkStyling
@@ -45,12 +45,12 @@ const Contact = () => {
               </LinkStyling>
               <LinkStyling
                 target="_blank"
-                href="https://github.com/svennijhuis"
+                href="mailto:sanijhuis@live.nl"
                 color="black"
                 icon="arrow"
                 iconHover="screen"
               >
-                Github
+                E-mail
               </LinkStyling>
             </div>
           </InViewFadeIn>

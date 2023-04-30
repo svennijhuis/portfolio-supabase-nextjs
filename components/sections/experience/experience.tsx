@@ -51,7 +51,7 @@ const Experience = () => {
     {
       title: "Cyclist",
       icon: "work",
-      text: "From January 2018 to October 2019, I was a member of the Volkerwessels-Merckx Cycling Team and competed in cycling races both domestically and internationally.",
+      text: "From January 2018 to October 2019, I was a member of the Volkerwessels-Merckx Cycling Team and competed in cycling races national and internationally.",
       subjectArray: ["challenges"],
     },
     {
@@ -72,7 +72,7 @@ const Experience = () => {
     {
       title: "Communication and Multimedia Design (HBO)",
       icon: "grid",
-      text: "CMD at the Hogeschool van Amsterdam teaches students how to communicate effectively with clients online, with a focus on digital development. The program emphasizes research and strategy to create successful digital communication solutions.",
+      text: "At the Hogeschool van Amsterdam, the CMD program teaches students how to effectively communicate with clients, web design and web development.",
       subjectArray: ["Development", "UX Design", "Research"],
       duration: "2020 - 2024",
     },
