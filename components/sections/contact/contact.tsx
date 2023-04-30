@@ -48,7 +48,7 @@ const Contact = () => {
                 href="mailto:sanijhuis@live.nl"
                 color="black"
                 icon="arrow"
-                iconHover="screen"
+                iconHover="mail"
               >
                 E-mail
               </LinkStyling>
