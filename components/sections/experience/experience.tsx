@@ -33,26 +33,26 @@ const Experience = () => {
     {
       title: "Front-end Web Development",
       icon: "work",
-      text: "I have been working at Day-Six since April 2021, primarily focusing on frontend development. Additionally, I have experience creating small custom plugins and themes.",
+      text: "I have been working at Day-Six since April 2021, primarily focusing on front-end development. Additionally, I have experience creating small custom plugins and themes.",
       subjectArray: [
-        "React.tjs",
+        "React.js",
         "Tailwind CSS",
         "PHP",
         "GSAP",
-        "Gutenburg blocks",
+        "Gutenburg Blocks",
       ],
     },
     {
       title: "Shop Assistant & B2B Maintenance",
       icon: "work",
       text: "I was employed at Fietskledingvoordeel.nl from October 2019 to April 2021, where I was primarily responsible for customer service both in-store and online. Additionally, I was involved in uploading articles to the webshop.",
-      subjectArray: ["Magento 2", "customer service", "B2B"],
+      subjectArray: ["Magento 2", "Customer Service", "B2B"],
     },
     {
       title: "Cyclist",
       icon: "work",
       text: "From January 2018 to October 2019, I was a member of the Volkerwessels-Merckx Cycling Team and competed in cycling races national and internationally.",
-      subjectArray: ["challenges"],
+      subjectArray: ["Challenges"],
     },
     {
       title: "Marketing & Communications Intern",
@@ -122,7 +122,7 @@ const Experience = () => {
     {
       title: "Express (NestJS)",
       icon: "development",
-      text: "I like using Express (NestJS) to create APIs for web applications. It's my preferred framework for connecting the backend with the frontend and databases, and I've used it extensively for personal projects.",
+      text: "I like using Express (NestJS) to create APIs for web applications. It's my preferred framework for connecting the backend with the front-end and databases, and I've used it extensively for personal projects.",
       subjectArray: ["Express", "Next.js", "Nest.js", "Turborepo"],
     },
     {
@@ -134,7 +134,7 @@ const Experience = () => {
     {
       title: "Supabase/Prisma",
       icon: "development",
-      text: "I'm excited to be expanding my skill set by diving into Supabase and Prisma! These powerful tools are great for building secure and scalable backends for web applications, and I'm eager to master them to take my projects to the next level.",
+      text: "I'm excited to expand my skill set by diving into Supabase and Prisma! These powerful tools are great for building secure and scalable backends for web applications, and I'm eager to master them to take my projects to the next level.",
       subjectArray: ["Supabase", "Prisma", "PostgreSQL"],
     },
     {

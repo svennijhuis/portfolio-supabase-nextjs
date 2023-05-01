@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Sven Nijhuis",
   description:
-    "Hey there! I'm Sven Nijhuis, a 24-year-old web developer based in Amsterdam. I have experience working with frontend and backend web technologies, and I am also familiar with Solidity and Web3.",
+    "Hey there! I'm Sven Nijhuis, a 24-year-old web developer based in Amsterdam. I have experience working with front-end and backend web technologies, and I am also familiar with Solidity and Web3.",
   generator: "Next.js",
   applicationName: "Next.js",
   referrer: "origin-when-cross-origin",
