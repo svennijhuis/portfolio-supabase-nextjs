@@ -25,7 +25,7 @@ const Work = () => {
       imageSrc: svenNijhuis,
       viewUrl: "",
       nameUrl: "",
-      text: "This is my personal portfolio, created to showcase who I am and where I aspire to go.",
+      text: "This website is my personal portfolio, created to showcase who I am and where I aspire to go.",
       tech: [
         "React.js",
         "Next.js",
@@ -80,10 +80,10 @@ const Work = () => {
               color="black"
               fontWeight="light"
             >
-              You can take a glimpse of my web development portfolio to get a
-              better idea of my work. If you would like to know more or have any
-              questions, feel free to connect with me on LinkedIn or e-mail. I
-              would be happy to chat with you!
+              Right below you can take a glimpse of my web development portfolio
+              to get a better idea of my work. If you would like to know more or
+              have any questions, feel free to connect with me on LinkedIn or by
+              e-mail. I would be pleased to talk with you!
             </Paragraph>
           </InViewFadeIn>
         </article>
@@ -101,7 +101,7 @@ const Work = () => {
           >
             {item.tech.map((item, index) => (
               <span
-                className="flex rounded-3xl border-[1px] border-black px-1 py-[2px] text-12 font-normal"
+                className="flex rounded-3xl border-[1px] border-black px-1 py-[2px] text-12 font-normal text-black"
                 key={index}
               >
                 {item}

@@ -87,7 +87,7 @@ const MobileNavbar = () => {
                   <Link
                     onClick={handleScroll}
                     className={clsx(
-                      "mx-[15px] mt-auto flex h-full w-full items-end  justify-between overflow-hidden text-25 font-light uppercase lg:mx-3",
+                      "mx-[15px] mt-auto flex h-full w-full items-end  justify-between overflow-hidden text-25 font-light uppercase text-black lg:mx-3",
                       styling.link_hover
                     )}
                     href={item.url}

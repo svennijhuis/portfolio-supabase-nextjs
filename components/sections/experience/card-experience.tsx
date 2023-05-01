@@ -64,7 +64,9 @@ const CardExperience = React.forwardRef<HTMLDivElement, CardExperienceProps>(
             ) : null}
           </div>
           <div className="flex flex-col">
-            <h4 className="mb-1 text-18 font-medium md:text-20">{title}</h4>
+            <h4 className="mb-1 text-18 font-medium text-black md:text-20">
+              {title}
+            </h4>
             <div className="flex flex-wrap gap-1">{children}</div>
           </div>
         </div>

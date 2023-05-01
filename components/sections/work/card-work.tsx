@@ -101,7 +101,7 @@ const CardWork = ({
             </Link>
           </h4>
 
-          <div className="col-span-3 md:col-span-2 md:mr-2">
+          <div className="col-span-3 md:col-span-2 md:mr-4">
             <Paragraph
               className="mb-[15px]"
               size="sm"

@@ -8,7 +8,7 @@ const Header = () => {
       <div className="container grid grid-cols-2 gap-5">
         <div className="col-span-1">
           <Link className="relative z-10 block" href="/">
-            <p className="text-18 font-medium uppercase md:text-20">
+            <p className="text-18 font-medium uppercase text-black md:text-20">
               Sven <span className="text-grayDark">Nijhuis</span>
             </p>
           </Link>

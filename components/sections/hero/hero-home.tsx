@@ -55,7 +55,7 @@ const HeroHome = ({ data }: any) => {
               color="black"
               fontWeight="medium"
             >
-              My goal is to continually keep inproving my skills and grow as a
+              My goal is to continually keep improving my skills and grow as a
               professional developer while exploring new technologies and
               approaches.
             </Paragraph>

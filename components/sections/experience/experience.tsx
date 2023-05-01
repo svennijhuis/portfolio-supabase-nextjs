@@ -33,7 +33,7 @@ const Experience = () => {
     {
       title: "Front-end Web Development",
       icon: "work",
-      text: "I have been working at Day-Six since April 2021, primarily focusing on frontend development. Additionally, I have experience creating small custom plugins and themes",
+      text: "I have been working at Day-Six since April 2021, primarily focusing on frontend development. Additionally, I have experience creating small custom plugins and themes.",
       subjectArray: [
         "React.tjs",
         "Tailwind CSS",
@@ -248,7 +248,7 @@ const Experience = () => {
               >
                 {item.subjectArray.map((item: string, index: number) => (
                   <span
-                    className="flex rounded-3xl border-[1px] border-black px-1 py-[2px] text-12 font-normal"
+                    className="flex rounded-3xl border-[1px] border-black px-1 py-[2px] text-12 font-normal text-black"
                     key={index}
                   >
                     {item}

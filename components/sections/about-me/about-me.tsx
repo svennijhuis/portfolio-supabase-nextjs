@@ -37,8 +37,8 @@ const AboutMe = () => {
             fontWeight="normal"
           >
             Hey there! I'm Sven Nijhuis, a 24-year-old web developer based in
-            Amsterdam. I have experience working with frontend and backend web
-            technologies, and I am also familiar with Solidity and Web3.
+            Amsterdam. I have experience working with front-end and backend web
+            technologies, and I am familiar with Solidity and Web3.
           </Paragraph>
           <Paragraph
             className="mb-2 md:mb-3"

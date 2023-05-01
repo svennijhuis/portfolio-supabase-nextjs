@@ -22,7 +22,7 @@ const Contact = () => {
               loadingHeight="min-h-[40px] md:min-h-[50px]"
             />
           </H3>
-          <InViewFadeIn delay={1.3} time={0.8}>
+          <InViewFadeIn delay={0.8} time={0.8}>
             <Paragraph
               className="mt-2 max-w-[520px] md:mt-3"
               size="md"
@@ -30,8 +30,8 @@ const Contact = () => {
               fontWeight="light"
             >
               I'm always interested in new opportunities and collaborations.
-              Don't hesitate to get in touch with me via e-mail or connect with
-              me on LinkedIn. I look forward to hearing from you!
+              Don't hesitate to get in touch with me by e-mail or connect with
+              me on LinkedIn. I look forward to hear from you!
             </Paragraph>
             <div className="mt-2 flex flex-wrap gap-2 md:mt-3 ">
               <LinkStyling
