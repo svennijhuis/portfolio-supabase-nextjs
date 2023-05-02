@@ -1,25 +1,68 @@
 import "../styles/globals.css";
+import { openGraphImage } from "./shared-metadata";
 import SupabaseProvider from "@/context/supabase-provider";
 import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Sven Nijhuis",
+  title: {
+    default: "Sven Nijhuis",
+    template: "%s | Sven Nijhuis",
+  },
   description:
-    "Hey there! I'm Sven Nijhuis, a 24-year-old web developer based in Amsterdam. I have experience working with front-end and backend web technologies, and I am also familiar with Solidity and Web3.",
-  generator: "Next.js",
-  applicationName: "Next.js",
+    "This is my personal portfolio, created to showcase who I am and where I aspire to go.",
+  applicationName: "Sven Nijhuis portfolio",
   referrer: "origin-when-cross-origin",
-  keywords: ["Next.js", "React", "JavaScript"],
-  authors: [{ name: "Seb" }, { name: "Josh", url: "https://nextjs.org" }],
-  colorScheme: "dark",
-  creator: "Jiachi Liu",
-  publisher: "Sebastian Markbåge",
+  keywords: [
+    "Next.js",
+    "React",
+    "JavaScript",
+    "TypeScript",
+    "Tailwind CSS",
+    "cmd",
+    "supabase",
+    "portfolio",
+    "sven",
+    "nijhuis",
+    "svennijhuis",
+    "svennijhuis.io",
+    "svennijhuis",
+    "Amsterdam",
+    "Netherlands",
+    "Nederland",
+    "hva",
+  ],
+  authors: [
+    { name: "Sven Nijhuis" },
+    { name: "Sven Nijhuis", url: "www.svennijhuis.io" },
+  ],
+  colorScheme: "light dark",
+  creator: "Sven Nijhuis",
+  publisher: "Sven Nijhuis",
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
+  },
+  openGraph: {
+    ...openGraphImage,
+    title: "Sven Nijhuis",
+    description:
+      "This is my personal portfolio, created to showcase who I am and where I aspire to go.",
+  },
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+    maximumScale: 1,
+  },
+  category: "technology portfolio",
+  twitter: {
+    card: "summary_large_image",
+    title: "Sven Nijhuis portfolio",
+    description:
+      "This is my personal portfolio, created to showcase who I am and where I aspire to go.",
+    creator: "@svennijhuis",
   },
 };
 

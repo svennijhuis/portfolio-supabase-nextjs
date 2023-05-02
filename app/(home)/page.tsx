@@ -5,6 +5,10 @@ import ImageGallery from "@/components/sections/gallery/image-gallery";
 import HeroHome from "@/components/sections/hero/hero-home";
 import Work from "@/components/sections/work/work";
 
+export const metadata = {
+  title: "Home",
+};
+
 export default async function Page() {
   // const { data } = await supabase.from("home").select();
 
