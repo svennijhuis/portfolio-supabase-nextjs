@@ -4,13 +4,13 @@ import InViewFadeIn from "@/components/animation/inview-fade-in";
 import LinkStyling from "@/components/buttons/link-styling";
 import Paragraph from "@/components/text/paragraph";
 import { Variants, motion, useInView } from "framer-motion";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 
 interface CardWorkProps {
   children: React.ReactNode;
   title: string;
-  imageSrc: any;
+  imageSrc: StaticImageData;
   viewUrl: string;
   nameUrl: string;
   text: string;

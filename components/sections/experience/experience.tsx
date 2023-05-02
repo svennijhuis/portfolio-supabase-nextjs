@@ -26,10 +26,10 @@ interface Card {
 
 const Experience = () => {
   const [subject, setSubject] = useState<string>("Skills");
-  const [data, setData] = useState<any[]>([]);
+  const [data, setData] = useState<Card[]>([]);
   const myRef = useRef<null | HTMLDivElement>(null);
 
-  const WorkExperience: any = [
+  const WorkExperience: Card[] = [
     {
       title: "Front-end Web Development",
       icon: "work",
@@ -68,20 +68,18 @@ const Experience = () => {
     },
   ];
 
-  const School: any = [
+  const School: Card[] = [
     {
       title: "Communication and Multimedia Design (HBO)",
       icon: "grid",
       text: "At the Hogeschool van Amsterdam, the CMD program teaches students how to effectively communicate with clients, web design and web development.",
       subjectArray: ["Development", "UX Design", "Research"],
-      duration: "2020 - 2024",
     },
     {
       title: "Minor Blockchain Development",
       icon: "grid",
       text: "Minor Blockchain Development at the Hogeschool van Amsterdam provides an introduction to blockchain technology and challenges students to create a web3 dapp.",
       subjectArray: ["Blockchain", "Smart Contracts", "Decentralized Apps"],
-      duration: "2023 - heden",
     },
     {
       title: "Minor information design",
@@ -94,25 +92,22 @@ const Experience = () => {
         "UX Design",
         "Interaction Design",
       ],
-      duration: "2022-2023",
     },
     {
       title: "Marketing and Communication (MBO niveau 4)",
       icon: "grid",
       text: "Johan Cruyff College is a school for elite athletes that offers a Marketing and Communication vocational education program alongside their athletic pursuits",
       subjectArray: ["Marketing", "Communication", "Sales"],
-      duration: "2016 - 2019",
     },
     {
       title: "Vmbo-T",
       icon: "grid",
       text: "I attended VMBO-T at Veenlanden College Vinkeveen, which is a regular school.",
       subjectArray: ["General Education"],
-      duration: "2013 - 2016",
     },
   ];
 
-  const Skills: any = [
+  const Skills: Card[] = [
     {
       title: "React.js",
       icon: "development",

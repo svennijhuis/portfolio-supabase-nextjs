@@ -8,7 +8,12 @@ import Headload from "../../../public/images/headload.png";
 import svenNijhuis from "../../../public/images/portfolio-sven.png";
 import Scanner from "../../../public/images/scanner.png";
 import ParallaxScrollSection from "./parallax-scroll-section";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
+
+interface ImageGalleryInterface {
+  src: StaticImageData;
+  title: string;
+}
 
 const ImageGallery = () => {
   const data = [
@@ -50,7 +55,7 @@ const ImageGallery = () => {
           <ParallaxScrollSection className="flex flex-col gap-3" speed={15}>
             {data
               .sort(() => Math.random() - 0.5)
-              .map((item: any, index: number) => (
+              .map((item: ImageGalleryInterface, index: number) => (
                 <Image
                   className="mb-[15px] aspect-video  w-full rounded-md object-cover md:mb-3  md:rounded-xl"
                   key={index}
@@ -66,7 +71,7 @@ const ImageGallery = () => {
           <ParallaxScrollSection speed={-10}>
             {data
               .sort(() => Math.random() - 0.5)
-              .map((item: any, index: number) => (
+              .map((item: ImageGalleryInterface, index: number) => (
                 <Image
                   className="mb-[15px] aspect-video  w-full rounded-md object-cover md:mb-3  md:rounded-xl"
                   key={index}
@@ -82,7 +87,7 @@ const ImageGallery = () => {
           <ParallaxScrollSection speed={10}>
             {data
               .sort(() => Math.random() - 0.5)
-              .map((item: any, index: number) => (
+              .map((item: ImageGalleryInterface, index: number) => (
                 <Image
                   className="mb-[15px] aspect-video  w-full rounded-md object-cover md:mb-3  md:rounded-xl"
                   key={index}
