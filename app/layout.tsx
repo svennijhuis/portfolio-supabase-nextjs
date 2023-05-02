@@ -62,7 +62,7 @@ export const metadata = {
     title: "Sven Nijhuis portfolio",
     description:
       "This is my personal portfolio, created to showcase who I am and where I aspire to go.",
-    creator: "@svennijhuis",
+    creator: "@sven_nijhuis",
   },
 };
 
