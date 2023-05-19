@@ -1,6 +1,7 @@
 import "../styles/globals.css";
 import { openGraphImage } from "./shared-metadata";
 import SupabaseProvider from "@/context/supabase-provider";
+import { Analytics } from "@vercel/analytics/react";
 import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -51,19 +52,7 @@ export const metadata = {
     description:
       "This is my personal portfolio, created to showcase who I am and where I aspire to go.",
   },
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 1,
-  },
   category: "technology portfolio",
-  twitter: {
-    card: "summary_large_image",
-    title: "Sven Nijhuis portfolio",
-    description:
-      "This is my personal portfolio, created to showcase who I am and where I aspire to go.",
-    creator: "@sven_nijhuis",
-  },
 };
 
 export default function RootLayout({
@@ -75,6 +64,7 @@ export default function RootLayout({
     <html className={inter.className} lang="en">
       <body>
         <SupabaseProvider>{children}</SupabaseProvider>
+        <Analytics />
       </body>
     </html>
   );
