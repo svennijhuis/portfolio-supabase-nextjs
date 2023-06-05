@@ -8,7 +8,7 @@ type Link = {
 };
 
 const HeaderDashboard = () => {
-  const Links = [
+  const Links: Link[] = [
     {
       name: "Dashboard",
       href: "/dashboard",
