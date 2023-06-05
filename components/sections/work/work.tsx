@@ -15,8 +15,8 @@ import supabase from "@/utils/supabase";
 import { useEffect, useState } from "react";
 
 type WorkProps = {
-  workData: any;
-  homeData: any;
+  workData?: any;
+  homeData?: any;
 };
 
 const Work = ({ workData, homeData }: WorkProps) => {
