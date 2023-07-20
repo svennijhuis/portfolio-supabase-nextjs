@@ -1,17 +1,17 @@
-import AboutMe from "@/components/sections/about-me/about-me";
-import Contact from "@/components/sections/contact/contact";
-import Experience from "@/components/sections/experience/experience";
-import ImageGallery from "@/components/sections/gallery/image-gallery";
-import HeroHome from "@/components/sections/hero/hero-home";
-import Work from "@/components/sections/work/work";
+import AboutMe from "@/components/sections-home/about-me/about-me";
+import Contact from "@/components/sections-home/contact/contact";
+import Experience from "@/components/sections-home/experience/experience";
+import ImageGallery from "@/components/sections-home/gallery/image-gallery";
+import HeroHome from "@/components/sections-home/hero/hero-home";
+import Work from "@/components/sections-home/work/work";
+
+export const revalidate = 0;
 
 export const metadata = {
   title: "Home",
 };
 
 export default async function Page() {
-  // const { data } = await supabase.from("home").select();
-
   return (
     <>
       <HeroHome />

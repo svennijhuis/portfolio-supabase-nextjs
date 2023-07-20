@@ -1,6 +1,5 @@
 import "../styles/globals.css";
 import { openGraphImage } from "./shared-metadata";
-import SupabaseProvider from "@/context/supabase-provider";
 import { Analytics } from "@vercel/analytics/react";
 import { Inter } from "next/font/google";
 
@@ -63,7 +62,7 @@ export default function RootLayout({
   return (
     <html className={inter.className} lang="en">
       <body>
-        <SupabaseProvider>{children}</SupabaseProvider>
+        {children}
         <Analytics />
       </body>
     </html>

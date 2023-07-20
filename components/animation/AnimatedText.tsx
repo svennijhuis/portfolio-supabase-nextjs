@@ -26,7 +26,7 @@ const AnimatedTextWord = ({
     once: true,
     margin: marginView,
   });
-  const words = text.split(" ");
+  const words = text?.split(" ");
 
   useEffect(() => {
     const container = {
@@ -77,7 +77,7 @@ const AnimatedTextWord = ({
       initial="hidden"
       animate="visible"
     >
-      {words.map((word, index) => (
+      {words?.map((word, index) => (
         <motion.span
           variants={child}
           key={index}

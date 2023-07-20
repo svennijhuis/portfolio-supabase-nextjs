@@ -1,5 +1,3 @@
-"use client";
-
 import AnimatedTextWord from "@/components/animation/AnimatedText";
 import InViewFadeIn from "@/components/animation/inview-fade-in";
 import ScaleOnScroll from "@/components/animation/scale-on-scroll";
@@ -7,39 +5,14 @@ import LinkStyling from "@/components/buttons/link-styling";
 import H1 from "@/components/text/H1";
 import Paragraph from "@/components/text/paragraph";
 
-const HeroHome = ({ data }: any) => {
-  // console.log(data);
-  // const [heroData, setHeroData] = useState(data);
-  // useEffect(() => {
-  //   const channel = supabase
-  //     .channel("realtime posts")
-  //     .on(
-  //       "postgres_changes",
-  //       {
-  //         event: "UPDATE",
-  //         schema: "public",
-  //         table: "home",
-  //       },
-  //       payload => {
-  //         setHeroData(payload.new);
-  //       }
-  //     )
-  //     .subscribe();
-
-  //   return () => {
-  //     supabase.removeChannel(channel);
-  //   };
-  // }, [supabase, heroData, setHeroData]);
-
-  // console.log(heroData);
-
+const HeroHome = () => {
   return (
     <ScaleOnScroll className="pb-10 pt-12 md:pt-[180px]">
       <section className="container grid grid-cols-1 md:grid-cols-2">
         <article className="col-span-1 mb-2 md:col-span-2 md:mb-3">
           <H1 className="max-w-[1200px] text-black">
             <AnimatedTextWord
-              text="Building digital world on the web"
+              text="BUILDING DIGITAL WORLD ON THE WEB"
               className="mr-[10px] md:mr-3"
               darkWords={[true, false, false, false, false, true]}
               marginView="-15% 0% -15% 0%"

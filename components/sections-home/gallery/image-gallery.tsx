@@ -1,5 +1,3 @@
-"use client";
-
 import ampere from "../../../public/images/ampere.png";
 import AndCoWoman from "../../../public/images/andcowoman.png";
 import dynamicCharting from "../../../public/images/dynamic-chart.png";

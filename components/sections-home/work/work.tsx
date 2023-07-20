@@ -1,5 +1,3 @@
-"use client";
-
 import ampere from "../../../public/images/ampere.png";
 import daysix from "../../../public/images/daysix.png";
 import dynamicCharting from "../../../public/images/dynamic-chart.png";
@@ -11,75 +9,18 @@ import InViewFadeIn from "@/components/animation/inview-fade-in";
 import H3 from "@/components/text/H3";
 import Paragraph from "@/components/text/paragraph";
 import TitleSmall from "@/components/text/title-small";
-import supabase from "@/utils/supabase";
-import { useEffect, useState } from "react";
 
-type WorkProps = {
-  workData?: any;
-  homeData?: any;
-};
-
-const Work = ({ workData, homeData }: WorkProps) => {
-  // const [work, setWork] = useState(workData);
-  // const [homeDatalist, setHomeDataList] = useState(homeData);
-
-  // useEffect(() => {
-  //   const channel = supabase
-  //     .channel("realtime posts")
-  //     .on(
-  //       "postgres_changes",
-  //       {
-  //         event: "INSERT",
-  //         schema: "public",
-  //         table: "Work",
-  //       },
-  //       payload => {
-  //         setWork([...work, payload.new as any]);
-  //       }
-  //     )
-  //     .subscribe();
-
-  //   return () => {
-  //     supabase.removeChannel(channel);
-  //   };
-  // }, [supabase, work, setWork]);
-
-  // console.log("hero data:", work);
-
-  // useEffect(() => {
-  //   const channel = supabase
-  //     .channel("realtime posts")
-  //     .on(
-  //       "postgres_changes",
-  //       {
-  //         event: "*",
-  //         schema: "public",
-  //         table: "home",
-  //         filter: "id=eq.1",
-  //       },
-  //       payload => {
-  //         setHomeDataList([...homeDatalist, payload.new as any]);
-  //       }
-  //     )
-  //     .subscribe();
-
-  //   return () => {
-  //     supabase.removeChannel(channel);
-  //   };
-  // }, [supabase, homeDatalist, setHomeDataList]);
-
-  // console.log("hero data:", homeDatalist);
-
+const Work = () => {
   const data = [
-    // {
-    //   title: "Gapstars",
-    //   imageSrc: gapstars,
-    //   viewUrl: "https://daysix.nl",
-    //   nameUrl: "Day Six",
-    //   text: "A dynamic website that provides limitless possibilities. I created this website on behalf of ",
-    //   tech: ["Gutenburg blocks", "Tailwind CSS", "PHP"],
-    //   urlProject: "https://gapstars.net",
-    // },
+    {
+      title: "Gapstars",
+      imageSrc: gapstars,
+      viewUrl: "https://daysix.nl",
+      nameUrl: "Day Six",
+      text: "A dynamic website that provides limitless possibilities. I created this website on behalf of ",
+      tech: ["Gutenburg blocks", "Tailwind CSS", "PHP"],
+      urlProject: "https://gapstars.net",
+    },
     {
       title: "Day Six",
       imageSrc: daysix,
@@ -105,16 +46,16 @@ const Work = ({ workData, homeData }: WorkProps) => {
       ],
       urlProject: "https://github.com/svennijhuis/portfolio-supabase-nextjs",
     },
-    {
-      title: "Dynamic Charting",
-      imageSrc: dynamicCharting,
-      viewUrl: "",
-      nameUrl: "",
-      text: "This project was created for school. I had to create a dynamic chart.",
-      tech: ["React.js", "Tailwind CSS", "D3.js"],
-      urlProject:
-        "https://github.com/svennijhuis/Stock-chart-with-d3.js-and-react.js",
-    },
+    // {
+    //   title: "Dynamic Charting",
+    //   imageSrc: dynamicCharting,
+    //   viewUrl: "",
+    //   nameUrl: "",
+    //   text: "This project was created for school. I had to create a dynamic chart.",
+    //   tech: ["React.js", "Tailwind CSS", "D3.js"],
+    //   urlProject:
+    //     "https://github.com/svennijhuis/Stock-chart-with-d3.js-and-react.js",
+    // },
     {
       title: "Ampère",
       imageSrc: ampere,
