@@ -36,9 +36,7 @@ const AboutMe = () => {
             color="black"
             fontWeight="normal"
           >
-            Hey there! I'm Sven Nijhuis, a 24-year-old web developer based in
-            Amsterdam. I have experience working with front-end and backend web
-            technologies, and I am familiar with Solidity and Web3.
+    Hey there! I'm Sven Nijhuis, a 25-year-old web developer based in Zaandam. I have experience working with both front-end and back-end web technologies.
           </Paragraph>
           <Paragraph
             className="mb-2 md:mb-3"
@@ -46,18 +44,10 @@ const AboutMe = () => {
             color="black"
             fontWeight="light"
           >
-            I'm dedicated to continuously expanding my skills and expertise in
-            web development. I currently work at Day-Six, a web development
-            agency based in Mijdrecht, where I specialize in front-end
-            development. Although my primary focus is front-end development, I'm
-            also keep on learning more about backend development. To achieve
-            this, I work on personal projects, and I attend courses at the
-            Hogeschool van Amsterdam (HvA) to expand my knowledge in this area.
+   I'm committed to constantly expanding my skills and expertise in software development. Over the past few years, my primary focus has been on JavaScript with frameworks and tools like Node.js, TypeScript, NestJS, Express, React, and Next.js. I've also worked with PHP and have developed a strong interest in exploring other languages like Rust and C#. To stay up-to-date, I work on personal projects and continuously educate myself. Programming isn’t just my job, it’s my hobby.
             <br />
             <br />
-            My background in competitive cycling has taught me the value of
-            perseverance and communication skills, which I apply in my work as a
-            developer.
+      Outside of coding, I’m passionate about running and set ambitious goals like completing a marathon. I was a professional cyclist and traveled extensively across Europe for it. The challenges I faced taught me the value of perseverance, which I now apply to achieving my goals in programming.
           </Paragraph>
           <LinkStyling href="/#work" icon="arrow" iconHover="eye" color="gray">
             See my work

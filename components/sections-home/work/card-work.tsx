@@ -14,7 +14,7 @@ interface CardWorkProps {
   viewUrl: string;
   nameUrl: string;
   text: string;
-  urlProject: string;
+  urlProject?: string;
 }
 
 const CardWork = ({
@@ -81,7 +81,9 @@ const CardWork = ({
           viewport={{ once: true, margin: "-15% 0% -15% 0%" }}
           className="absolute bottom-2 right-2 flex w-full"
         >
-          <LinkStyling
+      {
+        urlProject && (
+        <LinkStyling
             className="ml-auto"
             href={urlProject}
             icon="arrow"
@@ -91,15 +93,22 @@ const CardWork = ({
           >
             View
           </LinkStyling>
+        )
+      }
         </motion.div>
       </div>
       <InViewFadeIn delay={0.5} time={0.5}>
         <div className="mt-1 grid grid-cols-3 gap-1 md:mt-2">
-          <h4 className="col-span-3 pr-1 text-20 font-medium text-black hover:opacity-80 hover:transition-all md:col-span-1">
-            <Link target="_blank" href={urlProject}>
-              {title}
-            </Link>
-          </h4>
+          {
+            urlProject && (
+              <h4 className="col-span-3 pr-1 text-20 font-medium text-black hover:opacity-80 hover:transition-all md:col-span-1">
+                <Link target="_blank" href={urlProject}>
+                  {title}
+                </Link>
+              </h4>
+            )
+          }
+  
 
           <div className="col-span-3 md:col-span-2 md:mr-4">
             <Paragraph

@@ -30,6 +30,22 @@ const Experience = () => {
   const myRef = useRef<null | HTMLDivElement>(null);
 
   const WorkExperience: Card[] = [
+{
+  "title": "Software Developer",
+  "icon": "work",
+  "text": "I started at Auto.nl in 2023 as an intern and, after my internship, I took over the position from my mentor when they left. I was primarily responsible for the front-end of Auto.nl, but this also involved some server-side work with Apollo. Additionally, I occasionally work with C# and .NET when the backend lead is unavailable.",
+  "subjectArray": [
+    "Node.js",
+    "Apollo Server",
+    "API",
+    "GraphQL",
+    "Angular",
+    "React",
+    "Express",
+    "SCSS",
+    "C#",
+  ]
+},
     {
       title: "Front-end Web Development",
       icon: "work",
@@ -107,38 +123,47 @@ const Experience = () => {
     },
   ];
 
-  const Skills: Card[] = [
+const Skills: Card[] = [
+  {
+    title: "React.js & Front-end Development",
+    icon: "development",
+    text: "As a skilled web developer, I specialize in React.js, crafting dynamic user interfaces. I also have extensive experience with Next.js, Tailwind CSS, and Framer Motion, which I use to build responsive and visually appealing front-end applications.",
+    subjectArray: ["React.js", "Next.js", "Tailwind CSS", "Framer Motion"],
+  },
+  {
+    title: "Express & Backend Integration",
+    icon: "development",
+    text: "I enjoy using Express and NestJS to create APIs for web applications, effectively connecting the backend with the front-end and databases. I've utilized these frameworks extensively in personal and professional projects.",
+    subjectArray: ["Express", "NestJS", "Node.js", "GraphQL", "RESTful APIs"],
+  },
+  {
+  title: "Rust (Ongoing Learning)",
+  icon: "development",
+  text: "I'm currently diving into Rust, a language that excites me for its safety and performance features. While I'm not yet an expert, I'm actively working to deepen my understanding and mastery of Rust.",
+  subjectArray: ["Rust", "Axum", "Tokio"],
+},
+  {
+    title: "Solidity & Blockchain Development",
+    icon: "development",
+    text: "Though I'm relatively new to Solidity, the concept of smart contract development on the Ethereum blockchain captivates me. I'm enthusiastic about continuing to learn and explore this cutting-edge technology.",
+    subjectArray: ["Solidity", "Web3.js", "Ethereum", "Smart Contracts"],
+  },
+
     {
-      title: "React.js",
-      icon: "development",
-      text: "As a skilled web developer, I specialize in React.js and creating dynamic user interfaces. I also have expertise in related technologies like Next.js, Tailwind CSS, and Framer Motion. ",
-      subjectArray: ["React.js", "Next.js", "Tailwind CSS", "Framer Motion"],
-    },
-    {
-      title: "Express (NestJS)",
-      icon: "development",
-      text: "I like using Express (NestJS) to create APIs for web applications. It's my preferred framework for connecting the backend with the front-end and databases, and I've used it extensively for personal projects.",
-      subjectArray: ["Express", "Next.js", "Nest.js", "Turborepo"],
-    },
-    {
-      title: "Solidity",
-      icon: "development",
-      text: "Although I am relatively new to Solidity, I find the concept of smart contract development on the Ethereum blockchain fascinating. I am excited to continue learning and exploring this technology.",
-      subjectArray: ["React.js", "Solidity", "Web3.js", "Ethereum"],
-    },
-    {
-      title: "Supabase/Prisma",
-      icon: "development",
-      text: "I'm excited to expand my skill set by diving into Supabase and Prisma! These powerful tools are great for building secure and scalable backends for web applications, and I'm eager to master them to take my projects to the next level.",
-      subjectArray: ["Supabase", "Prisma", "PostgreSQL"],
-    },
-    {
-      title: "PHP",
-      icon: "development",
-      text: "I have used PHP for a variety of projects, including developing custom themes and plugins for WordPress. ",
-      subjectArray: ["PHP"],
-    },
-  ];
+    title: "C# & .NET (Occasional Backend Work)",
+    icon: "development",
+    text: "While my primary focus is front-end development, I also occasionally work with C# and .NET when the backend lead is unavailable.",
+    subjectArray: ["C#", ".NET"],
+  },
+  {
+    title: "PHP & WordPress Development",
+    icon: "development",
+    text: "I've used PHP in various projects, including developing custom themes and plugins for WordPress. It remains a valuable tool in my development toolkit.",
+    subjectArray: ["PHP", "WordPress", "Custom Plugins", "Custom Themes"],
+  },
+
+];
+
 
   useEffect(() => {
     if (subject === "WorkExperience") {

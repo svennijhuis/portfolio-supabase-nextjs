@@ -37,7 +37,7 @@ export const metadata = {
     { name: "Sven Nijhuis" },
     { name: "Sven Nijhuis", url: "www.svennijhuis.io" },
   ],
-  colorScheme: "light dark",
+
   creator: "Sven Nijhuis",
   publisher: "Sven Nijhuis",
   formatDetection: {

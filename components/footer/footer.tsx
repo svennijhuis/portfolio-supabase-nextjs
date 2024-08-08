@@ -11,7 +11,7 @@ const Footer = () => {
             color={"black"}
             fontWeight={"light"}
           >
-            Sven Nijhuis | Web Developer | © {new Date().getFullYear()} All
+            Sven Nijhuis | Software developer | © {new Date().getFullYear()} All
             rights reserved
           </Paragraph>
         </div>

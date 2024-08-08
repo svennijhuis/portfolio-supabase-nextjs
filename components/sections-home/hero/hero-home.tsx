@@ -28,9 +28,7 @@ const HeroHome = () => {
               color="black"
               fontWeight="medium"
             >
-              My goal is to continually keep improving my skills and grow as a
-              professional developer while exploring new technologies and
-              approaches.
+For me, it's all about continuous growth and improvement as a software developer while exploring new technologies and approaches.
             </Paragraph>
           </InViewFadeIn>
         </article>
@@ -42,11 +40,7 @@ const HeroHome = () => {
               color="black"
               fontWeight="light"
             >
-              I am daily engaged in the technologies React, NestJS, TypeScript,
-              Prisma, and Supabase. My focus as a web developer is on creating
-              robust and scalable web applications. I'm passionate about honing
-              my skills and dedicated to mastering all the latest technologies
-              in the field of web development.
+            I work daily with React, Node.js, and TypeScript, focusing on building robust and scalable software. I'm passionate about honing my skills and staying updated with the latest technologies. Recently, I've become particularly excited about Rust, and I'm eager to incorporate it into my projects.
             </Paragraph>
             <div className="flex gap-2 md:gap-3">
               <LinkStyling
