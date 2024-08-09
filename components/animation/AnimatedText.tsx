@@ -24,6 +24,7 @@ const AnimatedTextWord = ({
   const [container, setContainer] = useState({});
   const isInView = useInView(ref, {
     once: true,
+    // @ts-ignore
     margin: marginView,
   });
   const words = text?.split(" ");
