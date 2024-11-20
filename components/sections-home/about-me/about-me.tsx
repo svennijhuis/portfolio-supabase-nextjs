@@ -58,14 +58,14 @@ const AboutMe = () => {
             I’m dedicated to staying at the forefront of software development.
             In my spare time, I work on personal projects, experiment with new
             technologies, and keep myself updated with the latest industry
-            trends. For me, programming isn’t just a profession—it’s my passion.
+            trends. For me, programming isn’t just a profession it’s my passion.
             <br />
             <br />
             When I’m not coding, you can find me running or setting ambitious
             personal challenges, like completing a marathon. As a former
             professional cyclist, I’ve traveled extensively across Europe,
-            learning the importance of discipline, focus, and
-            perseverance—qualities I now channel into my work as a developer.
+            learning the importance of discipline, focus, and perseverance
+            qualities I now channel into my work as a developer.
           </Paragraph>
           <LinkStyling href="/#work" icon="arrow" iconHover="eye" color="gray">
             See my work

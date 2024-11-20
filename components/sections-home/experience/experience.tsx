@@ -33,7 +33,7 @@ const Experience = () => {
     {
       title: "Software Developer",
       icon: "work",
-      text: "I started at Auto.nl in 2023 as an intern, and after my internship, I took over my mentor's position when they left. Initially responsible for the front-end of Auto.nl, I transitioned into backend development. I now lead the backend team, focusing on building scalable and efficient solutions using .NET, C#, Terraform, and Azure.",
+      text: "I started at Auto.nl in 2023 as an intern, and after my internship, I took over my mentor's position when they left. Initially responsible for the front-end of Auto.nl, I transitioned into backend development. I now lead the backend, focusing on building scalable and efficient solutions using .NET, C#, Terraform, and Azure.",
       subjectArray: [
         ".NET",
         "C#",
