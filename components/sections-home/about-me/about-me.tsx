@@ -1,4 +1,3 @@
-import ImageProfile from "../../../public/images/sven.webp";
 import InViewFadeIn from "@/components/animation/inview-fade-in";
 import RotateOnScroll from "@/components/animation/rotate-onscroll";
 import LinkStyling from "@/components/buttons/link-styling";
@@ -6,6 +5,7 @@ import Paragraph from "@/components/text/paragraph";
 import TitleSmall from "@/components/text/title-small";
 import CloudIcon from "@/public/icons/background/cloud";
 import Image from "next/image";
+import ImageProfile from "../../../public/images/sven.webp";
 
 const AboutMe = () => {
   return (
@@ -13,11 +13,11 @@ const AboutMe = () => {
       id="about-me"
       className="container relative grid grid-cols-1 gap-2 overflow-hidden md:grid-cols-2 md:gap-5"
     >
-      <article className=" col-span-1 mt-8 flex justify-between md:mt-12">
+      <article className="col-span-1 mt-8 flex justify-between md:mt-12">
         <TitleSmall>About me</TitleSmall>
         <InViewFadeIn delay={0.8} time={0.8}>
           <Image
-            className=" mr-3 aspect-square h-[125px] w-[125px] rounded-full object-cover md:h-[150px] md:w-[150px]"
+            className="mr-3 aspect-square h-[125px] w-[125px] rounded-full object-cover md:h-[150px] md:w-[150px]"
             src={ImageProfile}
             width={150}
             height={150}
@@ -36,7 +36,9 @@ const AboutMe = () => {
             color="black"
             fontWeight="normal"
           >
-    Hey there! I'm Sven Nijhuis, a 25-year-old web developer based in Zaandam. I have experience working with both front-end and back-end web technologies.
+            Hey there! I'm Sven Nijhuis, a 25-year-old software developer based
+            in Zaandam with a passion for building innovative and efficient
+            applications.
           </Paragraph>
           <Paragraph
             className="mb-2 md:mb-3"
@@ -44,10 +46,26 @@ const AboutMe = () => {
             color="black"
             fontWeight="light"
           >
-   I'm committed to constantly expanding my skills and expertise in software development. Over the past few years, my primary focus has been on JavaScript with frameworks and tools like Node.js, TypeScript, NestJS, Express, React, and Next.js. I've also worked with PHP and have developed a strong interest in exploring other languages like Rust and C#. To stay up-to-date, I work on personal projects and continuously educate myself. Programming isn’t just my job, it’s my hobby.
+            I specialize in both front-end and back-end technologies and have
+            hands-on experience with a wide range of tools and languages. My
+            professional journey has focused on JavaScript, using frameworks
+            like Node.js, TypeScript, NestJS, Express, React, and Next.js.
+            Additionally, I’ve worked extensively with C# and .NET Core and am
+            currently exploring new languages like Rust to continuously expand
+            my skill set.
             <br />
             <br />
-      Outside of coding, I’m passionate about running and set ambitious goals like completing a marathon. I was a professional cyclist and traveled extensively across Europe for it. The challenges I faced taught me the value of perseverance, which I now apply to achieving my goals in programming.
+            I’m dedicated to staying at the forefront of software development.
+            In my spare time, I work on personal projects, experiment with new
+            technologies, and keep myself updated with the latest industry
+            trends. For me, programming isn’t just a profession—it’s my passion.
+            <br />
+            <br />
+            When I’m not coding, you can find me running or setting ambitious
+            personal challenges, like completing a marathon. As a former
+            professional cyclist, I’ve traveled extensively across Europe,
+            learning the importance of discipline, focus, and
+            perseverance—qualities I now channel into my work as a developer.
           </Paragraph>
           <LinkStyling href="/#work" icon="arrow" iconHover="eye" color="gray">
             See my work
