@@ -1,4 +1,3 @@
-import styles from "./card-experience.module.scss";
 import Paragraph from "@/components/text/paragraph";
 import ArrowIcon from "@/public/icons/arrow-icon";
 import BookIcon from "@/public/icons/book-icon";
@@ -11,6 +10,7 @@ import ScreenIcon from "@/public/icons/screen-icon";
 import WorkIcon from "@/public/icons/work-icon";
 import clsx from "clsx";
 import * as React from "react";
+import styles from "./card-experience.module.scss";
 
 interface CardExperienceProps extends React.HTMLProps<HTMLDivElement> {
   children: React.ReactNode;
@@ -30,11 +30,47 @@ interface CardExperienceProps extends React.HTMLProps<HTMLDivElement> {
 
 const CardExperience = React.forwardRef<HTMLDivElement, CardExperienceProps>(
   ({ children, title, text, icon, ...props }, ref) => {
+    const [isExpanded, setIsExpanded] = React.useState(false);
+    const [showReadMore, setShowReadMore] = React.useState(false);
+    const contentRef = React.useRef<HTMLDivElement>(null);
+    const truncatedHeight = 50;
+
+    // Improved content height check
+    React.useEffect(() => {
+      const checkHeight = () => {
+        if (contentRef.current) {
+          const fullHeight = contentRef.current.scrollHeight;
+          setShowReadMore(fullHeight > truncatedHeight + 20); // Added buffer for better detection
+        }
+      };
+
+      checkHeight();
+      // Re-check on window resize
+      window.addEventListener("resize", checkHeight);
+      return () => window.removeEventListener("resize", checkHeight);
+    }, [text]);
+
+    React.useEffect(() => {
+      const handleScroll = () => {
+        if (window.scrollY > 500 && isExpanded) {
+          setIsExpanded(false);
+        }
+      };
+
+      window.addEventListener("scroll", handleScroll);
+      return () => window.removeEventListener("scroll", handleScroll);
+    }, [isExpanded]);
+
     return (
       <article
         {...props}
         ref={ref}
-        className="sticky top-10 flex h-[350px] flex-col justify-between rounded-2xl border-[1px] border-black/20 bg-gray p-[15px] md:top-[200px] md:h-[225px] md:p-2"
+        className={clsx(
+          "sticky top-10 flex flex-col rounded-2xl border-[1px] border-black/20 bg-gray p-[15px] transition-all duration-500 ease-in-out md:top-[200px] md:p-2",
+          isExpanded
+            ? "h-auto min-h-[200px] md:min-h-[225px]"
+            : "h-[200px] md:h-[225px]"
+        )}
       >
         <div className="flex gap-1 md:gap-2">
           <div
@@ -71,14 +107,41 @@ const CardExperience = React.forwardRef<HTMLDivElement, CardExperienceProps>(
           </div>
         </div>
 
-        <Paragraph
-          className="flex h-full items-center pb-[5px] pr-1 md:items-end"
-          size="sm"
-          color="black"
-          fontWeight="light"
+        {/* Text section with Read More functionality */}
+        <div
+          className="relative overflow-hidden pt-1 transition-all duration-500 ease-in-out"
+          style={{
+            maxHeight: isExpanded
+              ? // @ts-ignore
+                `${contentRef?.current?.scrollHeight + 100 || 1000}px`
+              : `${truncatedHeight}px`,
+          }}
         >
-          {text}
-        </Paragraph>
+          <div ref={contentRef} className="transition-all duration-500">
+            <Paragraph
+              className="flex h-full items-center pb-[5px] pr-1 md:items-end"
+              size="sm"
+              color="black"
+              fontWeight="light"
+            >
+              {text}
+            </Paragraph>
+          </div>
+        </div>
+
+        {showReadMore && (
+          <button
+            onClick={() => setIsExpanded(!isExpanded)}
+            className={clsx(
+              "mt-auto text-start text-12 font-medium transition-opacity duration-300",
+              showReadMore ? "opacity-100" : "pointer-events-none opacity-0"
+            )}
+          >
+            <span className="hover:text-gray-700 underline">
+              {isExpanded ? "Show Less" : "Read More"}
+            </span>
+          </button>
+        )}
       </article>
     );
   }

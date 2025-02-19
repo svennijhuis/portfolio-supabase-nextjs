@@ -10,9 +10,9 @@ const HeroHome = () => {
     <ScaleOnScroll className="pb-10 pt-12 md:pt-[180px]">
       <section className="container grid grid-cols-1 md:grid-cols-2">
         <article className="col-span-1 mb-2 md:col-span-2 md:mb-3">
-          <H1 className="max-w-[1200px] text-black">
+          <H1 className="max-w-[1050px] text-black">
             <AnimatedTextWord
-              text="BUILDING DIGITAL WORLD ON THE WEB"
+              text="Hi, I'M SVEN. I BUILD SOFTWARE."
               className="mr-[10px] md:mr-3"
               darkWords={[true, false, false, false, false, true]}
               marginView="-15% 0% -15% 0%"
@@ -28,7 +28,9 @@ const HeroHome = () => {
               color="black"
               fontWeight="medium"
             >
-For me, it's all about continuous growth and improvement as a software developer while exploring new technologies and approaches.
+              For me, it's all about continuous growth and improvement as a
+              software developer while exploring new technologies and
+              approaches.
             </Paragraph>
           </InViewFadeIn>
         </article>
@@ -40,7 +42,10 @@ For me, it's all about continuous growth and improvement as a software developer
               color="black"
               fontWeight="light"
             >
-            I work daily with React, Node.js, and TypeScript, focusing on building robust and scalable software. I'm passionate about honing my skills and staying updated with the latest technologies. Recently, I've become particularly excited about Rust, and I'm eager to incorporate it into my projects.
+              I work daily with .NET, C#, and Rust, and I also have experience
+              with Node.js and TypeScript. My focus is on building robust and
+              scalable software. I'm passionate about continuously improving my
+              skills and staying up to date with the latest technologies.
             </Paragraph>
             <div className="flex gap-2 md:gap-3">
               <LinkStyling
@@ -52,12 +57,12 @@ For me, it's all about continuous growth and improvement as a software developer
                 About me
               </LinkStyling>
               <LinkStyling
-                href="/#work"
+                href="/#experience"
                 color="gray"
                 icon="arrow"
                 iconHover="screen"
               >
-                Work
+                Skills
               </LinkStyling>
             </div>
           </InViewFadeIn>

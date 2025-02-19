@@ -46,13 +46,11 @@ const AboutMe = () => {
             color="black"
             fontWeight="light"
           >
-            I specialize in both front-end and back-end technologies and have
-            hands-on experience with a wide range of tools and languages. My
-            professional journey has focused on JavaScript, using frameworks
-            like Node.js, TypeScript, NestJS, Express, React, and Next.js.
-            Additionally, I’ve worked extensively with C# and .NET Core and am
-            currently exploring new languages like Rust to continuously expand
-            my skill set.
+            I specialize in back-end technologies and have hands-on experience
+            with a wide range of frameworks and languages. My professional
+            journey is currently focused on .NET, C#, and Rust. I also have
+            experience working with frameworks like Node.js, TypeScript, NestJS,
+            Express, React, and Next.js.
             <br />
             <br />
             I’m dedicated to staying at the forefront of software development.

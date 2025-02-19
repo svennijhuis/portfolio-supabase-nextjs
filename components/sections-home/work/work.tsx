@@ -1,26 +1,26 @@
+import AnimatedTextWord from "@/components/animation/AnimatedText";
+import InViewFadeIn from "@/components/animation/inview-fade-in";
+import H3 from "@/components/text/H3";
+import Paragraph from "@/components/text/paragraph";
+import TitleSmall from "@/components/text/title-small";
 import ampere from "../../../public/images/ampere.png";
 import daysix from "../../../public/images/daysix.png";
 import dynamicCharting from "../../../public/images/dynamic-chart.png";
 import gapstars from "../../../public/images/gapstars.png";
 import svenNijhuis from "../../../public/images/portfolio-sven.png";
 import CardWork from "./card-work";
-import AnimatedTextWord from "@/components/animation/AnimatedText";
-import InViewFadeIn from "@/components/animation/inview-fade-in";
-import H3 from "@/components/text/H3";
-import Paragraph from "@/components/text/paragraph";
-import TitleSmall from "@/components/text/title-small";
 
 const Work = () => {
   const data = [
-    {
-      title: "Gapstars",
-      imageSrc: gapstars,
-      viewUrl: "https://daysix.nl",
-      nameUrl: "Day Six",
-      text: "A dynamic website that provides limitless possibilities. I created this website on behalf of ",
-      tech: ["Gutenburg blocks", "Tailwind CSS", "PHP"],
-      urlProject: "https://gapstars.net",
-    },
+    // {
+    //   title: "Microservices Architecture",
+    //   imageSrc: microservices,
+    //   viewUrl: "",
+    //   nameUrl: "",
+    //   text: "A private project implementing microservices architecture using modern technologies for high-performance distributed systems.",
+    //   tech: ["C#", ".NET", "Rust"],
+    //   urlProject: "",
+    // },
     {
       title: "Day Six",
       imageSrc: daysix,

@@ -3,7 +3,8 @@ import Contact from "@/components/sections-home/contact/contact";
 import Experience from "@/components/sections-home/experience/experience";
 import ImageGallery from "@/components/sections-home/gallery/image-gallery";
 import HeroHome from "@/components/sections-home/hero/hero-home";
-import Work from "@/components/sections-home/work/work";
+
+// import Work from "@/components/sections-home/work/work";
 
 export const revalidate = 0;
 
@@ -17,7 +18,7 @@ export default async function Page() {
       <HeroHome />
       <ImageGallery />
       <AboutMe />
-      <Work />
+      {/* <Work /> */}
       <Experience />
       <Contact />
     </>
