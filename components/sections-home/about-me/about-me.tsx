@@ -46,17 +46,17 @@ const AboutMe = () => {
             color="black"
             fontWeight="light"
           >
-            I specialize in back-end technologies and have hands-on experience
-            with a wide range of frameworks and languages. My professional
+            I specialize in back-end technologies and have experience with
+            various frameworks and programming languages. My professional
             journey is currently focused on .NET, C#, and Rust. I also have
             experience working with frameworks like Node.js, TypeScript, NestJS,
             Express, React, and Next.js.
             <br />
             <br />
             I’m dedicated to staying at the forefront of software development.
-            In my spare time, I work on personal projects, experiment with new
-            technologies, and keep myself updated with the latest industry
-            trends. For me, programming isn’t just a profession it’s my passion.
+            In my spare time, I work on personal projects, explore new
+            technologies, and stay updated with industry trends. For me,
+            programming isn’t just a profession it's a passion.
             <br />
             <br />
             When I’m not coding, you can find me running or setting ambitious
